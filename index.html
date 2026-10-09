@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Happiness Map</title>
+<meta name="description" content="Interactive Mercator map of national happiness scores, built with D3 and TopoJSON.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Happiness around the world</h1>
+  <p>Darker blue = higher happiness score (0–10). Hover for details, click a country to zoom, scroll to zoom, drag to pan.</p>
+</header>
+
+<main>
+  <section class="map-wrap">
+    <div class="controls">
+      <input id="search" list="countries" placeholder="Search a country…" aria-label="Search a country" autocomplete="off">
+      <datalist id="countries"></datalist>
+      <button id="zoom-in" aria-label="Zoom in">+</button>
+      <button id="zoom-out" aria-label="Zoom out">−</button>
+      <button id="reset">Reset view</button>
+    </div>
+    <svg id="map" viewBox="0 0 960 520" role="img" aria-label="World map colored by happiness score"></svg>
+    <div id="legend-note">Gray = no data</div>
+  </section>
+
+  <aside>
+    <div id="detail" class="card">
+      <h2>Select a country</h2>
+      <p class="muted">Click the map or pick one from the lists.</p>
+    </div>
+    <div class="card">
+      <h2>Happiest 10</h2>
+      <ol id="top"></ol>
+    </div>
+    <div class="card">
+      <h2>Least happy 10</h2>
+      <ol id="bottom"></ol>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  Scores are approximate World Happiness Report (2024) values in <code>data/happiness.csv</code>; replace with official data before relying on them.
+</footer>
+
+<div id="tip"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
