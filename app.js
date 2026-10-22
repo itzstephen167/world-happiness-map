@@ -11,6 +11,16 @@ Promise.all([
   const ranked = [...rows].sort((a, b) => b.score - a.score);
   const rank = new Map(ranked.map((d, i) => [d.country, i + 1]));
 
+  // Summary cards
+  const best = ranked[0], worst = ranked[ranked.length - 1];
+  d3.select("#sAvg").text(d3.mean(rows, d => d.score).toFixed(2));
+  d3.select("#sCount").text(`across ${rows.length} countries`);
+  d3.select("#sTopScore").text(best.score.toFixed(2));
+  d3.select("#sTop").text(best.country);
+  d3.select("#sLowScore").text(worst.score.toFixed(2));
+  d3.select("#sLow").text(worst.country);
+  d3.select("#sGap").text((best.score - worst.score).toFixed(2));
+
   const countries = topojson.feature(world, world.objects.countries);
   // Mercator blows up near the poles, so drop Antarctica.
   countries.features = countries.features.filter(d => d.properties.name !== "Antarctica");
@@ -65,7 +75,7 @@ Promise.all([
     paths.classed("selected", d => d.properties.name === name);
     const detail = d3.select("#detail");
     if (!name) {
-      detail.html("<h2>Select a country</h2><p class='muted'>Click the map or pick one from the lists.</p>");
+      detail.html("<h2>Select a country</h2><p class='muted'>Click the map, search, or pick one from the rankings.</p>");
       return;
     }
     const v = happiness.get(name);
@@ -90,7 +100,7 @@ Promise.all([
   // Top / bottom lists
   function fillList(sel, data) {
     d3.select(sel).selectAll("li").data(data).join("li").append("button")
-      .html(d => `<span>${d.country}</span><span class="score">${d.score.toFixed(2)}</span>`)
+      .html(d => `<span class="rank">${rank.get(d.country)}</span><span>${d.country}</span><span class="score">${d.score.toFixed(2)}</span>`)
       .on("click", (e, d) => select(d.country, true))
       .on("mouseenter", (e, d) => paths.classed("dim", p => p.properties.name !== d.country))
       .on("mouseleave", () => paths.classed("dim", false));
@@ -111,3 +121,10 @@ Promise.all([
 }).catch(err => {
   d3.select("#detail").html(`<h2>Couldn't load data</h2><p class="muted">${err.message}. If opening the file directly, run a local server (see README).</p>`);
 });
+
+// Highlight the rail icon for the section in view
+const navLinks = [...document.querySelectorAll("#nav a")];
+const spy = new IntersectionObserver(entries => entries.forEach(e => {
+  if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
+}), { rootMargin: "-45% 0px -50% 0px" });
+document.querySelectorAll("main > section").forEach(sec => spy.observe(sec));
