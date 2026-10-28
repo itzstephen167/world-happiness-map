@@ -80,6 +80,7 @@ button { font: inherit; cursor: pointer; }
 .btn { display: inline-flex; align-items: center; font-weight: 500; font-size: .9rem; padding: 10px 16px; border-radius: 12px; border: 0; }
 .btn.soft { background: var(--purple-soft); color: var(--purple); }
 .btn.soft:hover { background: var(--soft-hover); }
+.btn.soft[aria-pressed="true"] { background: var(--purple); color: #fff; }
 .icon-btn { width: 42px; height: 42px; border-radius: 12px; border: 0; background: var(--card); display: grid; place-items: center; color: var(--ink); box-shadow: var(--lift); }
 .icon-btn:hover { background: var(--surface); }
 .icon-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
@@ -105,6 +106,8 @@ button:focus-visible, input:focus-visible, .rail a:focus-visible { outline: 3px 
 .country { stroke: var(--stroke); stroke-width: .4; cursor: pointer; vector-effect: non-scaling-stroke; }
 .country:hover { stroke: var(--ink); stroke-width: 1.2; }
 .country.selected { stroke: var(--selected); stroke-width: 2.2; }
+/* Amber would vanish against Cividis yellow, so outline in ink instead. */
+.cvd .country.selected { stroke: var(--ink); }
 .country.dim { opacity: .3; }
 .legend text { fill: var(--muted); font: 11px var(--sans); }
 

@@ -30,7 +30,8 @@ Promise.all([
 
   const [lo, hi] = d3.extent(rows, d => d.score);
   // Offset so the lightest country is still visibly blue, not white.
-  const color = d3.scaleSequential(t => d3.interpolateBlues(0.15 + 0.85 * t)).domain([lo, hi]);
+  const blues = t => d3.interpolateBlues(0.15 + 0.85 * t);
+  const color = d3.scaleSequential(blues).domain([lo, hi]);
   const fill = name => happiness.has(name) ? color(happiness.get(name)) : "var(--nodata)";
 
   let selected = null;
@@ -118,6 +119,21 @@ Promise.all([
   leg.append("text").attr("y", lh + 12).text(lo.toFixed(1));
   leg.append("text").attr("x", lw).attr("y", lh + 12).attr("text-anchor", "end").text(hi.toFixed(1));
   leg.append("text").attr("y", -5).text("Happiness score");
+
+  // Colour-blind palette toggle, remembered between visits. Cividis reads the same
+  // with red-green or blue-yellow colour blindness.
+  function setPalette(cvd) {
+    color.interpolator(cvd ? d3.interpolateCividis : blues);
+    paths.attr("fill", d => fill(d.properties.name));
+    grad.selectAll("stop").attr("stop-color", (t, i) => color(lo + i / 10 * (hi - lo)));
+    document.body.classList.toggle("cvd", cvd);
+    d3.select("#palette").attr("aria-pressed", cvd);
+    try { localStorage.setItem("palette", cvd ? "cvd" : "blues"); } catch (e) {}
+  }
+  let saved = null;
+  try { saved = localStorage.getItem("palette"); } catch (e) {}
+  if (saved === "cvd") setPalette(true);
+  d3.select("#palette").on("click", function () { setPalette(this.getAttribute("aria-pressed") !== "true"); });
 }).catch(err => {
   d3.select("#detail").html(`<h2>Couldn't load data</h2><p class="muted">${err.message}. If opening the file directly, run a local server (see README).</p>`);
 });
