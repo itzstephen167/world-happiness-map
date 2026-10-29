@@ -1,143 +1,143 @@
-country,score
-Afghanistan,1.72
-Albania,5.30
-Algeria,5.36
-Argentina,6.19
-Armenia,5.28
-Australia,7.06
-Austria,6.91
-Azerbaijan,4.89
-Bahrain,5.96
-Bangladesh,3.89
-Belarus,5.82
-Belgium,6.89
-Benin,4.19
-Bolivia,5.60
-Bosnia and Herz.,5.88
-Botswana,3.38
-Brazil,6.27
-Bulgaria,5.88
-Burkina Faso,4.64
-Burundi,3.78
-Cambodia,4.34
-Cameroon,5.00
-Canada,6.90
-Chad,4.40
-Chile,6.36
-China,6.00
-Colombia,6.13
-Congo,5.10
-Costa Rica,6.96
-Croatia,5.94
-Cyprus,6.07
-Czechia,6.82
-Dem. Rep. Congo,3.30
-Denmark,7.58
-Dominican Rep.,5.78
-Ecuador,5.82
-Egypt,3.88
-El Salvador,6.47
-Estonia,6.45
-Ethiopia,4.86
-Finland,7.74
-France,6.61
-Gabon,5.06
-Georgia,5.19
-Germany,6.72
-Ghana,4.87
-Greece,5.82
-Guatemala,6.29
-Guinea,5.03
-Haiti,3.62
-Honduras,5.90
-Hungary,6.04
-Iceland,7.53
-India,4.05
-Indonesia,5.57
-Iran,4.89
-Iraq,4.94
-Ireland,6.84
-Israel,7.34
-Italy,6.32
-Jamaica,5.89
-Japan,6.06
-Jordan,4.50
-Kazakhstan,6.23
-Kenya,4.48
-Kosovo,6.56
-Kuwait,6.95
-Kyrgyzstan,6.00
-Laos,4.90
-Latvia,6.19
-Lebanon,2.71
-Lesotho,3.19
-Liberia,4.36
-Libya,5.41
-Lithuania,6.82
-Luxembourg,7.12
-Madagascar,4.17
-Malawi,3.42
-Malaysia,5.98
-Mali,4.64
-Malta,6.35
-Mauritania,4.30
-Mexico,6.68
-Moldova,5.77
-Mongolia,5.80
-Montenegro,5.70
-Morocco,5.02
-Mozambique,5.00
-Myanmar,4.31
-Namibia,4.57
-Nepal,5.16
-Netherlands,7.32
-New Zealand,7.03
-Nicaragua,6.10
-Niger,4.90
-Nigeria,5.07
-North Macedonia,5.27
-Norway,7.30
-Pakistan,4.66
-Paraguay,5.97
-Peru,5.84
-Philippines,5.79
-Poland,6.26
-Portugal,6.03
-Romania,6.59
-Russia,5.78
-Rwanda,3.39
-Saudi Arabia,6.59
-Senegal,5.05
-Serbia,6.18
-Sierra Leone,3.24
-Slovakia,6.26
-Slovenia,6.74
-Somalia,4.19
-South Africa,5.42
-South Korea,6.06
-Spain,6.42
-Sri Lanka,3.60
-Sudan,4.14
-Sweden,7.34
-Switzerland,7.06
-Taiwan,6.50
-Tajikistan,5.30
-Tanzania,3.78
-Thailand,6.01
-Togo,4.11
-Tunisia,4.42
-Turkey,4.98
-Turkmenistan,6.00
-Uganda,4.51
-Ukraine,5.06
-United Arab Emirates,6.73
-United Kingdom,6.75
-United States of America,6.73
-Uruguay,6.61
-Uzbekistan,6.20
-Venezuela,5.61
-Vietnam,6.04
-Yemen,3.56
-Zambia,4.50
-Zimbabwe,3.34
-eSwatini,4.40
+country,score,region
+Afghanistan,1.72,South Asia
+Albania,5.30,Central and Eastern Europe
+Algeria,5.36,Middle East and North Africa
+Argentina,6.19,Latin America and Caribbean
+Armenia,5.28,Commonwealth of Independent States
+Australia,7.06,North America and ANZ
+Austria,6.91,Western Europe
+Azerbaijan,4.89,Commonwealth of Independent States
+Bahrain,5.96,Middle East and North Africa
+Bangladesh,3.89,South Asia
+Belarus,5.82,Commonwealth of Independent States
+Belgium,6.89,Western Europe
+Benin,4.19,Sub-Saharan Africa
+Bolivia,5.60,Latin America and Caribbean
+Bosnia and Herz.,5.88,Central and Eastern Europe
+Botswana,3.38,Sub-Saharan Africa
+Brazil,6.27,Latin America and Caribbean
+Bulgaria,5.88,Central and Eastern Europe
+Burkina Faso,4.64,Sub-Saharan Africa
+Burundi,3.78,Sub-Saharan Africa
+Cambodia,4.34,Southeast Asia
+Cameroon,5.00,Sub-Saharan Africa
+Canada,6.90,North America and ANZ
+Chad,4.40,Sub-Saharan Africa
+Chile,6.36,Latin America and Caribbean
+China,6.00,East Asia
+Colombia,6.13,Latin America and Caribbean
+Congo,5.10,Sub-Saharan Africa
+Costa Rica,6.96,Latin America and Caribbean
+Croatia,5.94,Central and Eastern Europe
+Cyprus,6.07,Western Europe
+Czechia,6.82,Central and Eastern Europe
+Dem. Rep. Congo,3.30,Sub-Saharan Africa
+Denmark,7.58,Western Europe
+Dominican Rep.,5.78,Latin America and Caribbean
+Ecuador,5.82,Latin America and Caribbean
+Egypt,3.88,Middle East and North Africa
+El Salvador,6.47,Latin America and Caribbean
+Estonia,6.45,Central and Eastern Europe
+Ethiopia,4.86,Sub-Saharan Africa
+Finland,7.74,Western Europe
+France,6.61,Western Europe
+Gabon,5.06,Sub-Saharan Africa
+Georgia,5.19,Commonwealth of Independent States
+Germany,6.72,Western Europe
+Ghana,4.87,Sub-Saharan Africa
+Greece,5.82,Western Europe
+Guatemala,6.29,Latin America and Caribbean
+Guinea,5.03,Sub-Saharan Africa
+Haiti,3.62,Latin America and Caribbean
+Honduras,5.90,Latin America and Caribbean
+Hungary,6.04,Central and Eastern Europe
+Iceland,7.53,Western Europe
+India,4.05,South Asia
+Indonesia,5.57,Southeast Asia
+Iran,4.89,Middle East and North Africa
+Iraq,4.94,Middle East and North Africa
+Ireland,6.84,Western Europe
+Israel,7.34,Middle East and North Africa
+Italy,6.32,Western Europe
+Jamaica,5.89,Latin America and Caribbean
+Japan,6.06,East Asia
+Jordan,4.50,Middle East and North Africa
+Kazakhstan,6.23,Commonwealth of Independent States
+Kenya,4.48,Sub-Saharan Africa
+Kosovo,6.56,Central and Eastern Europe
+Kuwait,6.95,Middle East and North Africa
+Kyrgyzstan,6.00,Commonwealth of Independent States
+Laos,4.90,Southeast Asia
+Latvia,6.19,Central and Eastern Europe
+Lebanon,2.71,Middle East and North Africa
+Lesotho,3.19,Sub-Saharan Africa
+Liberia,4.36,Sub-Saharan Africa
+Libya,5.41,Middle East and North Africa
+Lithuania,6.82,Central and Eastern Europe
+Luxembourg,7.12,Western Europe
+Madagascar,4.17,Sub-Saharan Africa
+Malawi,3.42,Sub-Saharan Africa
+Malaysia,5.98,Southeast Asia
+Mali,4.64,Sub-Saharan Africa
+Malta,6.35,Western Europe
+Mauritania,4.30,Sub-Saharan Africa
+Mexico,6.68,Latin America and Caribbean
+Moldova,5.77,Commonwealth of Independent States
+Mongolia,5.80,East Asia
+Montenegro,5.70,Central and Eastern Europe
+Morocco,5.02,Middle East and North Africa
+Mozambique,5.00,Sub-Saharan Africa
+Myanmar,4.31,Southeast Asia
+Namibia,4.57,Sub-Saharan Africa
+Nepal,5.16,South Asia
+Netherlands,7.32,Western Europe
+New Zealand,7.03,North America and ANZ
+Nicaragua,6.10,Latin America and Caribbean
+Niger,4.90,Sub-Saharan Africa
+Nigeria,5.07,Sub-Saharan Africa
+North Macedonia,5.27,Central and Eastern Europe
+Norway,7.30,Western Europe
+Pakistan,4.66,South Asia
+Paraguay,5.97,Latin America and Caribbean
+Peru,5.84,Latin America and Caribbean
+Philippines,5.79,Southeast Asia
+Poland,6.26,Central and Eastern Europe
+Portugal,6.03,Western Europe
+Romania,6.59,Central and Eastern Europe
+Russia,5.78,Commonwealth of Independent States
+Rwanda,3.39,Sub-Saharan Africa
+Saudi Arabia,6.59,Middle East and North Africa
+Senegal,5.05,Sub-Saharan Africa
+Serbia,6.18,Central and Eastern Europe
+Sierra Leone,3.24,Sub-Saharan Africa
+Slovakia,6.26,Central and Eastern Europe
+Slovenia,6.74,Central and Eastern Europe
+Somalia,4.19,Sub-Saharan Africa
+South Africa,5.42,Sub-Saharan Africa
+South Korea,6.06,East Asia
+Spain,6.42,Western Europe
+Sri Lanka,3.60,South Asia
+Sudan,4.14,Sub-Saharan Africa
+Sweden,7.34,Western Europe
+Switzerland,7.06,Western Europe
+Taiwan,6.50,East Asia
+Tajikistan,5.30,Commonwealth of Independent States
+Tanzania,3.78,Sub-Saharan Africa
+Thailand,6.01,Southeast Asia
+Togo,4.11,Sub-Saharan Africa
+Tunisia,4.42,Middle East and North Africa
+Turkey,4.98,Middle East and North Africa
+Turkmenistan,6.00,Commonwealth of Independent States
+Uganda,4.51,Sub-Saharan Africa
+Ukraine,5.06,Commonwealth of Independent States
+United Arab Emirates,6.73,Middle East and North Africa
+United Kingdom,6.75,Western Europe
+United States of America,6.73,North America and ANZ
+Uruguay,6.61,Latin America and Caribbean
+Uzbekistan,6.20,Commonwealth of Independent States
+Venezuela,5.61,Latin America and Caribbean
+Vietnam,6.04,Southeast Asia
+Yemen,3.56,Middle East and North Africa
+Zambia,4.50,Sub-Saharan Africa
+Zimbabwe,3.34,Sub-Saharan Africa
+eSwatini,4.40,Sub-Saharan Africa

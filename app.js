@@ -5,9 +5,12 @@ const tip = d3.select("#tip");
 
 Promise.all([
   d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json"),
-  d3.csv("data/happiness.csv", d => ({ country: d.country, score: +d.score })),
+  d3.csv("data/happiness.csv", d => ({ country: d.country, score: +d.score, region: d.region })),
 ]).then(([world, rows]) => {
   const happiness = new Map(rows.map(d => [d.country, d.score]));
+  const regionOf = new Map(rows.map(d => [d.country, d.region]));
+  // World Happiness Report regions: mean score and country count for each
+  const regions = d3.rollup(rows, v => ({ avg: d3.mean(v, d => d.score), n: v.length }), d => d.region);
   const ranked = [...rows].sort((a, b) => b.score - a.score);
   const rank = new Map(ranked.map((d, i) => [d.country, i + 1]));
 
@@ -83,10 +86,16 @@ Promise.all([
     if (v == null) {
       detail.html(`<h2></h2><p class="muted">No data for this country.</p>`).select("h2").text(name);
     } else {
+      const reg = regions.get(regionOf.get(name)), diff = v - reg.avg;
       detail.html(`<h2></h2>
         <div class="big">${v.toFixed(2)}</div>
         <div class="bar"><i style="width:${(v / 10) * 100}%"></i></div>
-        <p class="muted">Rank ${rank.get(name)} of ${rows.length}</p>`).select("h2").text(name);
+        <p class="muted">Rank ${rank.get(name)} of ${rows.length}</p>
+        <div class="region"><span class="k"></span><b>${reg.avg.toFixed(2)}</b>
+          <span class="badge ${diff >= 0 ? "green" : ""}">${diff >= 0 ? "+" : "−"}${Math.abs(diff).toFixed(2)} vs region</span>
+          <div class="bar"><i style="width:${(reg.avg / 10) * 100}%"></i></div>
+          <p class="muted">Average of ${reg.n} countries</p></div>`).select("h2").text(name);
+      detail.select(".region .k").text(regionOf.get(name));
     }
     if (doZoom) zoomTo(countries.features.find(f => f.properties.name === name));
   }

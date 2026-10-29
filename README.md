@@ -22,4 +22,4 @@ Then open http://localhost:8000.
 
 ## Data
 
-`data/happiness.csv` (`country,score`) holds approximate World Happiness Report 2024 scores. Country names must match the `name` property in world-atlas (e.g. `United States of America`, `Dem. Rep. Congo`). Replace with the official data before publishing.
+`data/happiness.csv` (`country,score,region`) holds approximate World Happiness Report 2024 scores, with each country's World Happiness Report region (used for the regional average in the detail card). Country names must match the `name` property in world-atlas (e.g. `United States of America`, `Dem. Rep. Congo`). Replace with the official data before publishing.

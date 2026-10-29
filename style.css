@@ -115,6 +115,10 @@ button:focus-visible, input:focus-visible, .rail a:focus-visible { outline: 3px 
 #detail .big { font: 600 2.6rem/1.1 var(--display); color: var(--accent); margin: 14px 0 4px; font-variant-numeric: tabular-nums; }
 #detail .bar { height: 10px; background: var(--surface); border-radius: 5px; overflow: hidden; margin: 12px 0; }
 #detail .bar i { display: block; height: 100%; background: var(--accent); border-radius: 5px; }
+#detail .region { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+#detail .region .k { display: block; font-size: .82rem; color: var(--muted); margin-bottom: 4px; }
+#detail .region b { font: 600 1.4rem/1.2 var(--display); margin-right: 8px; font-variant-numeric: tabular-nums; }
+#detail .region .bar i { background: var(--muted); }
 
 /* rankings */
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
