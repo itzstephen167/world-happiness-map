@@ -20,6 +20,7 @@
   </a>
   <nav class="rail-nav" id="nav" aria-label="Sections">
     <a href="#map-section" class="active" aria-label="Map" title="Map"><svg viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg></a>
+    <a href="#compare" aria-label="Compare countries" title="Compare countries"><svg viewBox="0 0 24 24"><path d="M7 20V9M17 20V4M3 20h18"/></svg></a>
     <a href="#rankings" aria-label="Rankings" title="Rankings"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg></a>
     <a href="#about" aria-label="About the data" title="About the data"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/></svg></a>
   </nav>
@@ -70,6 +71,19 @@
         <h2>Select a country</h2>
         <p class="muted">Click the map, search, or pick one from the rankings.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="compare">
+    <div class="card">
+      <div class="card-head"><h2>Compare two countries</h2><span class="badge purple">Side by side</span></div>
+      <div class="cmp-pick">
+        <select id="cmpA" aria-label="First country"></select>
+        <span class="muted">vs</span>
+        <select id="cmpB" aria-label="Second country"></select>
+      </div>
+      <div class="cmp" id="cmp"></div>
+      <p class="muted" id="cmpGap"></p>
     </div>
   </section>
 

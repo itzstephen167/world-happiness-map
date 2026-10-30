@@ -120,6 +120,20 @@ button:focus-visible, input:focus-visible, .rail a:focus-visible { outline: 3px 
 #detail .region b { font: 600 1.4rem/1.2 var(--display); margin-right: 8px; font-variant-numeric: tabular-nums; }
 #detail .region .bar i { background: var(--muted); }
 
+/* compare */
+.cmp-pick { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 14px 0 18px; }
+.cmp-pick select { flex: 1 1 200px; font: inherit; color: var(--ink); background: var(--card); border: 0; border-radius: 14px; padding: 11px 14px; box-shadow: var(--lift); cursor: pointer; }
+.cmp-pick select:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: 2px; }
+.cmp { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 600px) { .cmp { grid-template-columns: 1fr; } }
+.cmp-side { background: var(--surface); border-radius: 16px; padding: 18px 20px; }
+.cmp-side h3 { font-size: 1.05rem; }
+.cmp-side .big { font: 600 2.2rem/1.1 var(--display); color: var(--accent); margin: 10px 0 4px; font-variant-numeric: tabular-nums; }
+.cmp-side .bar { height: 10px; background: var(--card); border-radius: 5px; overflow: hidden; margin: 10px 0; }
+.cmp-side .bar i { display: block; height: 100%; background: var(--accent); border-radius: 5px; }
+#cmpGap { margin-top: 14px; }
+#detail .btn { margin-top: 16px; }
+
 /* rankings */
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 @media (max-width: 760px) { .pair { grid-template-columns: 1fr; } }

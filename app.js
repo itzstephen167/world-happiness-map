@@ -94,8 +94,13 @@ Promise.all([
         <div class="region"><span class="k"></span><b>${reg.avg.toFixed(2)}</b>
           <span class="badge ${diff >= 0 ? "green" : ""}">${diff >= 0 ? "+" : "−"}${Math.abs(diff).toFixed(2)} vs region</span>
           <div class="bar"><i style="width:${(reg.avg / 10) * 100}%"></i></div>
-          <p class="muted">Average of ${reg.n} countries</p></div>`).select("h2").text(name);
+          <p class="muted">Average of ${reg.n} countries</p></div>
+        <button class="btn soft" id="toCompare">Compare with another country</button>`).select("h2").text(name);
       detail.select(".region .k").text(regionOf.get(name));
+      detail.select("#toCompare").on("click", () => {
+        cmpA.property("value", name); compare();
+        document.getElementById("compare").scrollIntoView();
+      });
     }
     if (doZoom) zoomTo(countries.features.find(f => f.properties.name === name));
   }
@@ -106,6 +111,33 @@ Promise.all([
     const match = [...happiness.keys()].find(k => k.toLowerCase() === this.value.trim().toLowerCase());
     if (match) { select(match, true); this.blur(); }
   });
+
+  // Compare two countries side by side (defaults to the happiest and least happy)
+  const names = ranked.map(d => d.country).sort();
+  const cmpA = d3.select("#cmpA"), cmpB = d3.select("#cmpB");
+  [cmpA, cmpB].forEach(s => s.selectAll("option").data(names).join("option").attr("value", d => d).text(d => d));
+  cmpA.property("value", best.country);
+  cmpB.property("value", worst.country);
+  function compare() {
+    const pair = [cmpA.property("value"), cmpB.property("value")];
+    d3.select("#cmp").selectAll(".cmp-side").data(pair).join("div").attr("class", "cmp-side")
+      .html(n => `<h3></h3>
+        <div class="big">${happiness.get(n).toFixed(2)}</div>
+        <div class="bar"><i style="width:${(happiness.get(n) / 10) * 100}%"></i></div>
+        <p class="muted">Rank ${rank.get(n)} of ${rows.length}</p>
+        <p class="muted"></p>`)
+      .each(function (n) {
+        d3.select(this).select("h3").text(n);
+        d3.select(this).select("p:last-child").text(`${regionOf.get(n)} · region avg ${regions.get(regionOf.get(n)).avg.toFixed(2)}`);
+      });
+    const [a, b] = pair, diff = happiness.get(a) - happiness.get(b);
+    d3.select("#cmpGap").text(a === b ? "Pick two different countries to compare."
+      : Math.abs(diff) < 0.005 ? `${a} and ${b} have the same score.`
+      : `${diff > 0 ? a : b} scores ${Math.abs(diff).toFixed(2)} points higher than ${diff > 0 ? b : a}.`);
+  }
+  cmpA.on("change", compare);
+  cmpB.on("change", compare);
+  compare();
 
   // Top / bottom lists
   function fillList(sel, data) {
