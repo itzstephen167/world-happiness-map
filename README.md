@@ -1,5 +1,9 @@
 # World Happiness Map
 
+**Live site:** https://itzstephen167.github.io/world-happiness-map/
+
+![World Happiness Map: summary cards above a choropleth world map shaded by happiness score](docs/screenshot.png)
+
 Interactive Mercator world map built with D3 and TopoJSON (`world-atlas`), colored in shades of blue by happiness score.
 
 Features: hover tooltips, click-to-zoom with a detail card (score + rank), search, pan/zoom controls, top/bottom 10 lists, dark mode.
