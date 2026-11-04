@@ -5,17 +5,11 @@ const tip = d3.select("#tip");
 
 Promise.all([
   d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json"),
-  d3.csv("data/happiness.csv", d => ({ country: d.country, score: +d.score, region: d.region })),
-]).then(([world, rows]) => {
-  const happiness = new Map(rows.map(d => [d.country, d.score]));
-  const regionOf = new Map(rows.map(d => [d.country, d.region]));
-  // World Happiness Report regions: mean score and country count for each
-  const regions = d3.rollup(rows, v => ({ avg: d3.mean(v, d => d.score), n: v.length }), d => d.region);
-  const ranked = [...rows].sort((a, b) => b.score - a.score);
-  const rank = new Map(ranked.map((d, i) => [d.country, i + 1]));
+  loadHappiness(),
+]).then(([world, data]) => {
+  const { rows, ranked, happiness, regionOf, regions, rank, best, worst } = data;
 
   // Summary cards
-  const best = ranked[0], worst = ranked[ranked.length - 1];
   d3.select("#sAvg").text(d3.mean(rows, d => d.score).toFixed(2));
   d3.select("#sCount").text(`across ${rows.length} countries`);
   d3.select("#sTopScore").text(best.score.toFixed(2));
@@ -79,7 +73,7 @@ Promise.all([
     paths.classed("selected", d => d.properties.name === name);
     const detail = d3.select("#detail");
     if (!name) {
-      detail.html("<h2>Select a country</h2><p class='muted'>Click the map, search, or pick one from the rankings.</p>");
+      detail.html("<h2>Select a country</h2><p class='muted'>Click the map or search for a country.</p>");
       return;
     }
     const v = happiness.get(name);
@@ -95,14 +89,12 @@ Promise.all([
           <span class="badge ${diff >= 0 ? "green" : ""}">${diff >= 0 ? "+" : "−"}${Math.abs(diff).toFixed(2)} vs region</span>
           <div class="bar"><i style="width:${(reg.avg / 10) * 100}%"></i></div>
           <p class="muted">Average of ${reg.n} countries</p></div>
-        <button class="btn soft" id="toCompare">Compare with another country</button>`).select("h2").text(name);
+        <a class="btn soft" href="compare.html?a=${encodeURIComponent(name)}">Compare with another country</a>`).select("h2").text(name);
       detail.select(".region .k").text(regionOf.get(name));
-      detail.select("#toCompare").on("click", () => {
-        cmpA.property("value", name); compare();
-        document.getElementById("compare").scrollIntoView();
-      });
     }
-    if (doZoom) zoomTo(countries.features.find(f => f.properties.name === name));
+    // A few scored countries (Bahrain, Malta) have no shape on the 1:110m map.
+    const shape = countries.features.find(f => f.properties.name === name);
+    if (doZoom && shape) zoomTo(shape);
   }
 
   // Search
@@ -111,44 +103,6 @@ Promise.all([
     const match = [...happiness.keys()].find(k => k.toLowerCase() === this.value.trim().toLowerCase());
     if (match) { select(match, true); this.blur(); }
   });
-
-  // Compare two countries side by side (defaults to the happiest and least happy)
-  const names = ranked.map(d => d.country).sort();
-  const cmpA = d3.select("#cmpA"), cmpB = d3.select("#cmpB");
-  [cmpA, cmpB].forEach(s => s.selectAll("option").data(names).join("option").attr("value", d => d).text(d => d));
-  cmpA.property("value", best.country);
-  cmpB.property("value", worst.country);
-  function compare() {
-    const pair = [cmpA.property("value"), cmpB.property("value")];
-    d3.select("#cmp").selectAll(".cmp-side").data(pair).join("div").attr("class", "cmp-side")
-      .html(n => `<h3></h3>
-        <div class="big">${happiness.get(n).toFixed(2)}</div>
-        <div class="bar"><i style="width:${(happiness.get(n) / 10) * 100}%"></i></div>
-        <p class="muted">Rank ${rank.get(n)} of ${rows.length}</p>
-        <p class="muted"></p>`)
-      .each(function (n) {
-        d3.select(this).select("h3").text(n);
-        d3.select(this).select("p:last-child").text(`${regionOf.get(n)} · region avg ${regions.get(regionOf.get(n)).avg.toFixed(2)}`);
-      });
-    const [a, b] = pair, diff = happiness.get(a) - happiness.get(b);
-    d3.select("#cmpGap").text(a === b ? "Pick two different countries to compare."
-      : Math.abs(diff) < 0.005 ? `${a} and ${b} have the same score.`
-      : `${diff > 0 ? a : b} scores ${Math.abs(diff).toFixed(2)} points higher than ${diff > 0 ? b : a}.`);
-  }
-  cmpA.on("change", compare);
-  cmpB.on("change", compare);
-  compare();
-
-  // Top / bottom lists
-  function fillList(sel, data) {
-    d3.select(sel).selectAll("li").data(data).join("li").append("button")
-      .html(d => `<span class="rank">${rank.get(d.country)}</span><span>${d.country}</span><span class="score">${d.score.toFixed(2)}</span>`)
-      .on("click", (e, d) => select(d.country, true))
-      .on("mouseenter", (e, d) => paths.classed("dim", p => p.properties.name !== d.country))
-      .on("mouseleave", () => paths.classed("dim", false));
-  }
-  fillList("#top", ranked.slice(0, 10));
-  fillList("#bottom", ranked.slice(-10).reverse());
 
   // Legend
   const lw = 220, lh = 10, lx = 20, ly = H - 36;
@@ -175,13 +129,8 @@ Promise.all([
   try { saved = localStorage.getItem("palette"); } catch (e) {}
   if (saved === "cvd") setPalette(true);
   d3.select("#palette").on("click", function () { setPalette(this.getAttribute("aria-pressed") !== "true"); });
-}).catch(err => {
-  d3.select("#detail").html(`<h2>Couldn't load data</h2><p class="muted">${err.message}. If opening the file directly, run a local server (see README).</p>`);
-});
 
-// Highlight the rail icon for the section in view
-const navLinks = [...document.querySelectorAll("#nav a")];
-const spy = new IntersectionObserver(entries => entries.forEach(e => {
-  if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
-}), { rootMargin: "-45% 0px -50% 0px" });
-document.querySelectorAll("main > section").forEach(sec => spy.observe(sec));
+  // Arriving from a ranking: index.html?c=Finland opens that country.
+  const linked = new URLSearchParams(location.search).get("c");
+  if (happiness.has(linked)) select(linked, true);
+}).catch(err => loadError("#detail", err));
