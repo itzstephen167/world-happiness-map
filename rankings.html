@@ -33,7 +33,7 @@
   <div class="page-head">
     <div>
       <h1>Rankings</h1>
-      <p class="sub">The ten highest and ten lowest national happiness scores. Pick a country to see it on the map.</p>
+      <p class="sub">Every country's national happiness score. Pick a country to see it on the map.</p>
     </div>
   </div>
 
@@ -45,6 +45,32 @@
     <div class="card">
       <div class="card-head"><h2>Least happy 10</h2><span class="badge">Bottom</span></div>
       <ol id="bottom" class="rank-list"></ol>
+    </div>
+  </section>
+
+  <section id="all">
+    <div class="card">
+      <div class="card-head"><h2>All countries</h2><span class="badge purple">Approximate</span></div>
+      <div class="filters">
+        <div class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="tableSearch" type="search" placeholder="Search a country…" aria-label="Search a country" autocomplete="off">
+        </div>
+        <select id="tableRegion" aria-label="Filter by region"></select>
+      </div>
+      <p class="muted table-count" id="tableCount" aria-live="polite"></p>
+      <div class="table-wrap">
+        <table class="rank-table">
+          <thead><tr>
+            <th scope="col" data-k="rank"><button>Rank</button></th>
+            <th scope="col" data-k="country"><button>Country</button></th>
+            <th scope="col" data-k="region" class="col-region"><button>Region</button></th>
+            <th scope="col" data-k="score" class="num"><button>Score</button></th>
+            <th scope="col" data-k="diff" class="num"><button>vs region</button></th>
+          </tr></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
     </div>
   </section>
 

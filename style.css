@@ -134,6 +134,28 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 #cmpGap { margin-top: 14px; }
 #detail .btn { margin-top: 16px; }
 
+/* full rankings table */
+.filters { display: flex; gap: 12px; flex-wrap: wrap; margin: 4px 0 12px; }
+.filters .search { flex: 1 1 240px; width: auto; }
+.filters select { flex: 1 1 200px; min-width: 0; font: inherit; color: var(--ink); background: var(--card); border: 0; border-radius: 14px; padding: 11px 14px; box-shadow: var(--lift); cursor: pointer; }
+.filters select:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: 2px; }
+.table-count { font-size: .85rem; margin-bottom: 10px; }
+.table-wrap { max-height: 620px; overflow: auto; border-radius: 16px; background: var(--surface); }
+.rank-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.rank-table thead th { position: sticky; top: 0; z-index: 1; background: var(--surface); text-align: left; padding: 0; }
+.rank-table th button { display: inline-flex; align-items: center; gap: 4px; border: 0; background: none; color: var(--muted); font-size: .8rem; font-weight: 600; padding: 12px 14px; border-radius: 8px; }
+.rank-table th button:hover { color: var(--ink); }
+.rank-table th[aria-sort] button { color: var(--ink); }
+.rank-table th[aria-sort="ascending"] button::after { content: "↑"; }
+.rank-table th[aria-sort="descending"] button::after { content: "↓"; }
+.rank-table td { padding: 8px 14px; border-top: 1px solid var(--line); }
+.rank-table td a { color: var(--ink); font-weight: 500; text-decoration: none; border-radius: 4px; }
+.rank-table td a:hover { color: var(--purple-ink); text-decoration: underline; }
+.rank-table .num { text-align: right; white-space: nowrap; }
+.rank-table thead .num { text-align: right; }
+.rank-table .score { background: var(--card); }
+@media (max-width: 640px) { .rank-table { font-size: .86rem; } .rank-table .col-region { display: none; } .rank-table td, .rank-table th button { padding-left: 5px; padding-right: 5px; } .rank-table .score { padding: 2px 6px; } .rank-table .badge { padding: 3px 5px; } }
+
 /* rankings */
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 @media (max-width: 760px) { .pair { grid-template-columns: 1fr; } }
