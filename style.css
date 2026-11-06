@@ -134,6 +134,14 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 #cmpGap { margin-top: 14px; }
 #detail .btn { margin-top: 16px; }
 
+/* country page */
+.country-pick { font: inherit; color: var(--ink); background: var(--card); border: 0; border-radius: 14px; padding: 11px 14px; box-shadow: var(--lift); cursor: pointer; width: min(340px, 100%); }
+.country-pick:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: 2px; }
+.country-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+.rank-list li.current a { background: var(--purple-soft); }
+.rank-list li.current .rank { background: var(--purple); }
+.rank-list.scroll { max-height: 460px; overflow: auto; }
+
 /* full rankings table */
 .filters { display: flex; gap: 12px; flex-wrap: wrap; margin: 4px 0 12px; }
 .filters .search { flex: 1 1 240px; width: auto; }

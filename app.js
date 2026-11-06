@@ -89,6 +89,7 @@ Promise.all([
           <span class="badge ${diff >= 0 ? "green" : ""}">${diff >= 0 ? "+" : "−"}${Math.abs(diff).toFixed(2)} vs region</span>
           <div class="bar"><i style="width:${(reg.avg / 10) * 100}%"></i></div>
           <p class="muted">Average of ${reg.n} countries</p></div>
+        <a class="btn soft" href="country.html?c=${encodeURIComponent(name)}">Open country page</a>
         <a class="btn soft" href="compare.html?a=${encodeURIComponent(name)}">Compare with another country</a>`).select("h2").text(name);
       detail.select(".region .k").text(regionOf.get(name));
     }
