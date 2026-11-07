@@ -6,7 +6,7 @@
 
 Interactive Mercator world map built with D3 and TopoJSON (`world-atlas`), colored in shades of blue by happiness score.
 
-Features: hover tooltips, click-to-zoom with a detail card (score + rank), search, pan/zoom controls, top/bottom 10 lists, dark mode.
+Features: hover tooltips, click-to-zoom with a detail card (score + rank), search, pan/zoom controls, top/bottom 10 lists, a regions page with regional averages, dark mode.
 
 ## Run locally
 

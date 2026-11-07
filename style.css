@@ -142,6 +142,22 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 .rank-list li.current .rank { background: var(--purple); }
 .rank-list.scroll { max-height: 460px; overflow: auto; }
 
+/* regions page */
+.region-bars { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+.region-bar { width: 100%; display: grid; grid-template-columns: minmax(150px, 230px) 1fr auto; align-items: center; gap: 14px; border: 0; background: none; color: var(--ink); text-align: left; padding: 10px; border-radius: 12px; }
+.region-bar:hover { background: var(--surface); }
+.region-bar[aria-pressed="true"] { background: var(--purple-soft); }
+.region-name { font-weight: 500; font-size: .92rem; }
+.region-track { position: relative; height: 12px; background: var(--surface); border-radius: 6px; }
+.region-bar:hover .region-track, .region-bar[aria-pressed="true"] .region-track { background: var(--card); }
+.region-track .fill { position: absolute; inset: 0 auto 0 0; background: var(--accent); border-radius: 6px; }
+.region-bar[aria-pressed="true"] .fill { background: var(--purple); }
+.region-track .tick { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--ink); border-radius: 1px; }
+.region-bar .score { background: var(--card); }
+.region-big { font: 600 2.6rem/1.1 var(--display); color: var(--accent); margin: 14px 0 4px; font-variant-numeric: tabular-nums; }
+.region-list { margin-top: 14px; }
+@media (max-width: 640px) { .region-bar { grid-template-columns: 1fr auto; gap: 6px 10px; } .region-track { grid-column: 1 / -1; grid-row: 2; } }
+
 /* full rankings table */
 .filters { display: flex; gap: 12px; flex-wrap: wrap; margin: 4px 0 12px; }
 .filters .search { flex: 1 1 240px; width: auto; }
