@@ -131,6 +131,28 @@ Promise.all([
   if (saved === "cvd") setPalette(true);
   d3.select("#palette").on("click", function () { setPalette(this.getAttribute("aria-pressed") !== "true"); });
 
+  // Map filters: highlight one region and/or a score range; everything else fades back.
+  const bands = d3.range(Math.floor(lo), Math.ceil(hi)).reverse().map(b => [b, b + 1]);
+  d3.select("#fRegion").selectAll("option").data(["", ...[...regions.keys()].sort()]).join("option")
+    .attr("value", d => d).text(d => d || "All regions");
+  d3.select("#fBand").selectAll("option").data(["", ...bands.map(b => b.join("-"))]).join("option")
+    .attr("value", d => d).text(d => d ? d.replace("-", " to ") : "All scores");
+  function applyFilters() {
+    const region = d3.select("#fRegion").property("value"), band = d3.select("#fBand").property("value");
+    const [bLo, bHi] = band ? band.split("-").map(Number) : [-Infinity, Infinity];
+    // Upper bound is exclusive except for the top band, so every score lands in exactly one band.
+    const top = bHi === bands[0][1];
+    const match = name => happiness.has(name) && (!region || regionOf.get(name) === region) &&
+      happiness.get(name) >= bLo && (happiness.get(name) < bHi || (top && happiness.get(name) <= bHi));
+    const active = !!(region || band);
+    paths.classed("dim", d => active && !match(d.properties.name));
+    const n = rows.filter(d => match(d.country)).length;
+    d3.select("#fCount").text(active ? `${n} of ${rows.length} countries highlighted` : "");
+    d3.select("#fClear").property("hidden", !active);
+  }
+  d3.selectAll("#fRegion, #fBand").on("change", applyFilters);
+  d3.select("#fClear").on("click", () => { d3.selectAll("#fRegion, #fBand").property("value", ""); applyFilters(); });
+
   // Arriving from a ranking: index.html?c=Finland opens that country.
   const linked = new URLSearchParams(location.search).get("c");
   if (happiness.has(linked)) select(linked, true);

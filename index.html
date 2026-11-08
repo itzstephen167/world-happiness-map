@@ -66,6 +66,12 @@
             <button class="btn soft" id="reset">Reset view</button>
           </div>
         </div>
+        <div class="filters map-filters">
+          <select id="fRegion" aria-label="Highlight a region"></select>
+          <select id="fBand" aria-label="Highlight a score range"></select>
+          <button class="btn soft" id="fClear" hidden>Clear filters</button>
+        </div>
+        <p class="muted table-count" id="fCount" aria-live="polite"></p>
         <div class="map-frame">
           <svg id="map" viewBox="0 0 960 520" role="img" aria-label="World map colored by happiness score"></svg>
         </div>

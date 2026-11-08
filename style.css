@@ -109,6 +109,11 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 .country.selected { stroke: var(--selected); stroke-width: 2.2; }
 /* Amber would vanish against Cividis yellow, so outline in ink instead. */
 .cvd .country.selected { stroke: var(--ink); }
+/* map filters: non-matching countries fade back */
+.map-filters { margin: 0 0 8px; }
+.map-filters .btn { flex: none; }
+.country { transition: opacity .2s; }
+.country.dim { opacity: .18; }
 .legend text { fill: var(--muted); font: 11px var(--sans); }
 
 #detail h2 { font-size: 1.2rem; margin-bottom: 6px; }
