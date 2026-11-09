@@ -71,6 +71,8 @@ Promise.all([
   function select(name, doZoom) {
     selected = name;
     paths.classed("selected", d => d.properties.name === name);
+    // Keep the selection in the URL so the address bar is always a shareable link.
+    history.replaceState(null, "", name ? "?c=" + encodeURIComponent(name) : location.pathname);
     const detail = d3.select("#detail");
     if (!name) {
       detail.html("<h2>Select a country</h2><p class='muted'>Click the map or search for a country.</p>");
@@ -153,7 +155,7 @@ Promise.all([
   d3.selectAll("#fRegion, #fBand").on("change", applyFilters);
   d3.select("#fClear").on("click", () => { d3.selectAll("#fRegion, #fBand").property("value", ""); applyFilters(); });
 
-  // Arriving from a ranking: index.html?c=Finland opens that country.
+  // Arriving from a ranking or a shared link: index.html?c=Finland opens that country.
   const linked = new URLSearchParams(location.search).get("c");
   if (happiness.has(linked)) select(linked, true);
 }).catch(err => loadError("#detail", err));
