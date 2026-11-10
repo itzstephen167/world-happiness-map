@@ -21,4 +21,4 @@ Keep the current look. Keep the "Approximate" label on the scores until item 3 i
 - [x] 12. Regions page: `regions.html` with a chart of regional averages; click a region to see its countries
 - [x] 13. Map filters: highlight a region or a score range on the map
 - [x] 14. Shareable links: store the selected country or comparison in the URL
-- [ ] 15. Game page: "Which country scores higher?" using the dataset, with a running score
+- [x] 15. Game page: "Which country scores higher?" using the dataset, with a running score
