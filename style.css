@@ -104,6 +104,7 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 .map-frame { background: var(--surface); border-radius: 16px; overflow: hidden; }
 #map { width: 100%; height: auto; display: block; cursor: grab; }
 #map:active { cursor: grabbing; }
+#map:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: -3px; }
 .country { stroke: var(--stroke); stroke-width: .4; cursor: pointer; vector-effect: non-scaling-stroke; }
 .country:hover { stroke: var(--ink); stroke-width: 1.2; }
 .country.selected { stroke: var(--selected); stroke-width: 2.2; }

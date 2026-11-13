@@ -100,6 +100,41 @@ Promise.all([
     if (doZoom && shape) zoomTo(shape);
   }
 
+  // Keyboard navigation: with the map focused, arrow keys jump to the nearest scored
+  // country in that direction, Enter opens its country page and Escape clears.
+  const centre = new Map(countries.features.filter(f => happiness.has(f.properties.name))
+    .map(f => [f.properties.name, path.centroid(f)]));
+  const DIRS = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] };
+  function neighbour(from, [dx, dy]) {
+    const dimmed = new Set(paths.filter(".dim").data().map(d => d.properties.name));
+    let pick = null, bestCost = Infinity;
+    for (const [name, [x, y]] of centre) {
+      if (name === selected || dimmed.has(name)) continue;
+      const along = (x - from[0]) * dx + (y - from[1]) * dy;
+      const across = Math.abs((x - from[0]) * dy) + Math.abs((y - from[1]) * dx);
+      // Must lie in the pressed direction; drifting sideways costs double.
+      if (along <= 0 || across > along * 2) continue;
+      const cost = along + 2 * across;
+      if (cost < bestCost) { bestCost = cost; pick = name; }
+    }
+    return pick;
+  }
+  svg.on("keydown", e => {
+    if (e.key === "Enter" && happiness.has(selected)) {
+      location.href = "country.html?c=" + encodeURIComponent(selected);
+    } else if (e.key === "Escape") {
+      select(null);
+    } else if (DIRS[e.key]) {
+      e.preventDefault(); // stop the page scrolling
+      // With nothing selected, start from the middle of the map.
+      const next = neighbour(centre.get(selected) || [W / 2, H / 2], DIRS[e.key]);
+      if (!next) return;
+      select(next);
+      // Keep the current zoom level, but pan so the country stays in view.
+      svg.transition().duration(300).call(zoom.translateTo, ...centre.get(next));
+    }
+  });
+
   // Search
   d3.select("#countries").selectAll("option").data(ranked.map(d => d.country).sort()).join("option").attr("value", d => d);
   d3.select("#search").on("change", function () {

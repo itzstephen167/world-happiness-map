@@ -74,12 +74,12 @@
         </div>
         <p class="muted table-count" id="fCount" aria-live="polite"></p>
         <div class="map-frame">
-          <svg id="map" viewBox="0 0 960 520" role="img" aria-label="World map colored by happiness score"></svg>
+          <svg id="map" viewBox="0 0 960 520" role="img" tabindex="0" aria-label="World map colored by happiness score" aria-describedby="legend-note"></svg>
         </div>
-        <p class="note" id="legend-note">Scroll to zoom, drag to pan. Grey means no data.</p>
+        <p class="note" id="legend-note">Scroll to zoom, drag to pan. Grey means no data. With the map focused, arrow keys move between countries and Enter opens the country page.</p>
       </div>
 
-      <div class="card" id="detail">
+      <div class="card" id="detail" aria-live="polite">
         <h2>Select a country</h2>
         <p class="muted">Click the map or search for a country.</p>
       </div>
