@@ -28,7 +28,7 @@ Keep the current look. Keep the "Approximate" label on the scores until item 3 i
 None of these need outside data. Keep the "Approximate" label on the scores until item 3 is done.
 
 - [x] 16. Keyboard navigation on the map: arrow keys move between countries, Enter opens the country page
-- [ ] 17. Export the rankings table (with the current filter and sort) as CSV
+- [x] 17. Export the rankings table (with the current filter and sort) as CSV
 - [ ] 18. Open Graph / Twitter meta tags so shared links preview nicely
 - [ ] 19. Print styles: map, tables and country pages print cleanly, with the side rail hidden
 - [ ] 20. Custom 404 page with links back to each page
