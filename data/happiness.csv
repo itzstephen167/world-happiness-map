@@ -1,143 +1,148 @@
 country,score,region
-Afghanistan,1.72,South Asia
-Albania,5.30,Central and Eastern Europe
-Algeria,5.36,Middle East and North Africa
-Argentina,6.19,Latin America and Caribbean
-Armenia,5.28,Commonwealth of Independent States
-Australia,7.06,North America and ANZ
-Austria,6.91,Western Europe
-Azerbaijan,4.89,Commonwealth of Independent States
-Bahrain,5.96,Middle East and North Africa
-Bangladesh,3.89,South Asia
-Belarus,5.82,Commonwealth of Independent States
-Belgium,6.89,Western Europe
-Benin,4.19,Sub-Saharan Africa
-Bolivia,5.60,Latin America and Caribbean
-Bosnia and Herz.,5.88,Central and Eastern Europe
-Botswana,3.38,Sub-Saharan Africa
-Brazil,6.27,Latin America and Caribbean
-Bulgaria,5.88,Central and Eastern Europe
-Burkina Faso,4.64,Sub-Saharan Africa
-Burundi,3.78,Sub-Saharan Africa
-Cambodia,4.34,Southeast Asia
-Cameroon,5.00,Sub-Saharan Africa
-Canada,6.90,North America and ANZ
-Chad,4.40,Sub-Saharan Africa
-Chile,6.36,Latin America and Caribbean
-China,6.00,East Asia
-Colombia,6.13,Latin America and Caribbean
-Congo,5.10,Sub-Saharan Africa
-Costa Rica,6.96,Latin America and Caribbean
-Croatia,5.94,Central and Eastern Europe
-Cyprus,6.07,Western Europe
-Czechia,6.82,Central and Eastern Europe
-Dem. Rep. Congo,3.30,Sub-Saharan Africa
-Denmark,7.58,Western Europe
-Dominican Rep.,5.78,Latin America and Caribbean
-Ecuador,5.82,Latin America and Caribbean
-Egypt,3.88,Middle East and North Africa
-El Salvador,6.47,Latin America and Caribbean
-Estonia,6.45,Central and Eastern Europe
-Ethiopia,4.86,Sub-Saharan Africa
-Finland,7.74,Western Europe
-France,6.61,Western Europe
-Gabon,5.06,Sub-Saharan Africa
-Georgia,5.19,Commonwealth of Independent States
-Germany,6.72,Western Europe
-Ghana,4.87,Sub-Saharan Africa
-Greece,5.82,Western Europe
-Guatemala,6.29,Latin America and Caribbean
-Guinea,5.03,Sub-Saharan Africa
-Haiti,3.62,Latin America and Caribbean
-Honduras,5.90,Latin America and Caribbean
-Hungary,6.04,Central and Eastern Europe
-Iceland,7.53,Western Europe
-India,4.05,South Asia
-Indonesia,5.57,Southeast Asia
-Iran,4.89,Middle East and North Africa
-Iraq,4.94,Middle East and North Africa
-Ireland,6.84,Western Europe
-Israel,7.34,Middle East and North Africa
-Italy,6.32,Western Europe
-Jamaica,5.89,Latin America and Caribbean
-Japan,6.06,East Asia
-Jordan,4.50,Middle East and North Africa
-Kazakhstan,6.23,Commonwealth of Independent States
-Kenya,4.48,Sub-Saharan Africa
-Kosovo,6.56,Central and Eastern Europe
-Kuwait,6.95,Middle East and North Africa
-Kyrgyzstan,6.00,Commonwealth of Independent States
-Laos,4.90,Southeast Asia
-Latvia,6.19,Central and Eastern Europe
-Lebanon,2.71,Middle East and North Africa
-Lesotho,3.19,Sub-Saharan Africa
-Liberia,4.36,Sub-Saharan Africa
-Libya,5.41,Middle East and North Africa
-Lithuania,6.82,Central and Eastern Europe
-Luxembourg,7.12,Western Europe
-Madagascar,4.17,Sub-Saharan Africa
-Malawi,3.42,Sub-Saharan Africa
-Malaysia,5.98,Southeast Asia
-Mali,4.64,Sub-Saharan Africa
-Malta,6.35,Western Europe
-Mauritania,4.30,Sub-Saharan Africa
-Mexico,6.68,Latin America and Caribbean
-Moldova,5.77,Commonwealth of Independent States
-Mongolia,5.80,East Asia
-Montenegro,5.70,Central and Eastern Europe
-Morocco,5.02,Middle East and North Africa
-Mozambique,5.00,Sub-Saharan Africa
-Myanmar,4.31,Southeast Asia
-Namibia,4.57,Sub-Saharan Africa
-Nepal,5.16,South Asia
-Netherlands,7.32,Western Europe
-New Zealand,7.03,North America and ANZ
-Nicaragua,6.10,Latin America and Caribbean
-Niger,4.90,Sub-Saharan Africa
-Nigeria,5.07,Sub-Saharan Africa
-North Macedonia,5.27,Central and Eastern Europe
-Norway,7.30,Western Europe
-Pakistan,4.66,South Asia
-Paraguay,5.97,Latin America and Caribbean
-Peru,5.84,Latin America and Caribbean
-Philippines,5.79,Southeast Asia
-Poland,6.26,Central and Eastern Europe
-Portugal,6.03,Western Europe
-Romania,6.59,Central and Eastern Europe
-Russia,5.78,Commonwealth of Independent States
-Rwanda,3.39,Sub-Saharan Africa
-Saudi Arabia,6.59,Middle East and North Africa
-Senegal,5.05,Sub-Saharan Africa
-Serbia,6.18,Central and Eastern Europe
-Sierra Leone,3.24,Sub-Saharan Africa
-Slovakia,6.26,Central and Eastern Europe
-Slovenia,6.74,Central and Eastern Europe
-Somalia,4.19,Sub-Saharan Africa
-South Africa,5.42,Sub-Saharan Africa
-South Korea,6.06,East Asia
-Spain,6.42,Western Europe
-Sri Lanka,3.60,South Asia
-Sudan,4.14,Sub-Saharan Africa
-Sweden,7.34,Western Europe
-Switzerland,7.06,Western Europe
-Taiwan,6.50,East Asia
-Tajikistan,5.30,Commonwealth of Independent States
-Tanzania,3.78,Sub-Saharan Africa
-Thailand,6.01,Southeast Asia
-Togo,4.11,Sub-Saharan Africa
-Tunisia,4.42,Middle East and North Africa
-Turkey,4.98,Middle East and North Africa
-Turkmenistan,6.00,Commonwealth of Independent States
-Uganda,4.51,Sub-Saharan Africa
-Ukraine,5.06,Commonwealth of Independent States
-United Arab Emirates,6.73,Middle East and North Africa
-United Kingdom,6.75,Western Europe
-United States of America,6.73,North America and ANZ
-Uruguay,6.61,Latin America and Caribbean
-Uzbekistan,6.20,Commonwealth of Independent States
-Venezuela,5.61,Latin America and Caribbean
-Vietnam,6.04,Southeast Asia
-Yemen,3.56,Middle East and North Africa
-Zambia,4.50,Sub-Saharan Africa
-Zimbabwe,3.34,Sub-Saharan Africa
-eSwatini,4.40,Sub-Saharan Africa
+Finland,7.736,Western Europe
+Denmark,7.521,Western Europe
+Iceland,7.515,Western Europe
+Sweden,7.345,Western Europe
+Netherlands,7.306,Western Europe
+Costa Rica,7.274,Latin America and Caribbean
+Norway,7.262,Western Europe
+Israel,7.234,Middle East and North Africa
+Luxembourg,7.122,Western Europe
+Mexico,6.979,Latin America and Caribbean
+Australia,6.974,North America and ANZ
+New Zealand,6.952,North America and ANZ
+Switzerland,6.935,Western Europe
+Belgium,6.910,Western Europe
+Ireland,6.889,Western Europe
+Lithuania,6.829,Central and Eastern Europe
+Austria,6.810,Western Europe
+Canada,6.803,North America and ANZ
+Slovenia,6.792,Central and Eastern Europe
+Czechia,6.775,Central and Eastern Europe
+United Arab Emirates,6.759,Middle East and North Africa
+Germany,6.753,Western Europe
+United Kingdom,6.728,Western Europe
+United States,6.724,North America and ANZ
+Belize,6.711,Latin America and Caribbean
+Poland,6.673,Central and Eastern Europe
+Taiwan,6.669,East Asia
+Uruguay,6.661,Latin America and Caribbean
+Kosovo,6.659,Central and Eastern Europe
+Kuwait,6.629,Middle East and North Africa
+Serbia,6.606,Central and Eastern Europe
+Saudi Arabia,6.600,Middle East and North Africa
+France,6.593,Western Europe
+Singapore,6.565,Southeast Asia
+Romania,6.563,Central and Eastern Europe
+Brazil,6.494,Latin America and Caribbean
+El Salvador,6.492,Latin America and Caribbean
+Spain,6.466,Western Europe
+Estonia,6.417,Central and Eastern Europe
+Italy,6.415,Western Europe
+Panama,6.407,Latin America and Caribbean
+Argentina,6.397,Latin America and Caribbean
+Kazakhstan,6.378,Commonwealth of Independent States
+Guatemala,6.362,Latin America and Caribbean
+Chile,6.361,Latin America and Caribbean
+Vietnam,6.352,Southeast Asia
+Nicaragua,6.330,Latin America and Caribbean
+Malta,6.316,Western Europe
+Thailand,6.222,Southeast Asia
+Slovakia,6.221,Central and Eastern Europe
+Latvia,6.207,Central and Eastern Europe
+Oman,6.197,Middle East and North Africa
+Uzbekistan,6.193,Commonwealth of Independent States
+Paraguay,6.172,Latin America and Caribbean
+Japan,6.147,East Asia
+Bosnia and Herzegovina,6.136,Central and Eastern Europe
+Philippines,6.107,Southeast Asia
+South Korea,6.038,East Asia
+Bahrain,6.030,Middle East and North Africa
+Portugal,6.013,Western Europe
+Colombia,6.004,Latin America and Caribbean
+Ecuador,5.965,Latin America and Caribbean
+Honduras,5.964,Latin America and Caribbean
+Malaysia,5.955,Southeast Asia
+Peru,5.947,Latin America and Caribbean
+Russia,5.945,Commonwealth of Independent States
+Cyprus,5.942,Western Europe
+China,5.921,East Asia
+Hungary,5.915,Central and Eastern Europe
+Trinidad and Tobago,5.905,Latin America and Caribbean
+Montenegro,5.877,Central and Eastern Europe
+Croatia,5.870,Central and Eastern Europe
+Jamaica,5.870,Latin America and Caribbean
+Bolivia,5.868,Latin America and Caribbean
+Kyrgyzstan,5.858,Commonwealth of Independent States
+Dominican Republic,5.846,Latin America and Caribbean
+Mongolia,5.833,East Asia
+Mauritius,5.832,Sub-Saharan Africa
+Libya,5.820,Middle East and North Africa
+Moldova,5.819,Commonwealth of Independent States
+Greece,5.776,Western Europe
+Venezuela,5.683,Latin America and Caribbean
+Indonesia,5.617,Southeast Asia
+Algeria,5.571,Middle East and North Africa
+Bulgaria,5.554,Central and Eastern Europe
+North Macedonia,5.503,Central and Eastern Europe
+Armenia,5.494,Commonwealth of Independent States
+Hong Kong,5.491,East Asia
+Albania,5.411,Central and Eastern Europe
+Tajikistan,5.411,Commonwealth of Independent States
+Georgia,5.400,Commonwealth of Independent States
+Nepal,5.311,South Asia
+Laos,5.301,Southeast Asia
+Türkiye,5.262,Middle East and North Africa
+South Africa,5.213,Sub-Saharan Africa
+Mozambique,5.190,Sub-Saharan Africa
+Gabon,5.120,Sub-Saharan Africa
+Côte d'Ivoire,5.102,Sub-Saharan Africa
+Iran,5.093,Middle East and North Africa
+Congo,5.030,Sub-Saharan Africa
+Iraq,4.976,Middle East and North Africa
+Guinea,4.929,Sub-Saharan Africa
+Namibia,4.911,Sub-Saharan Africa
+Cameroon,4.887,Sub-Saharan Africa
+Nigeria,4.885,Sub-Saharan Africa
+Azerbaijan,4.875,Commonwealth of Independent States
+Senegal,4.856,Sub-Saharan Africa
+Palestine,4.780,Middle East and North Africa
+Pakistan,4.768,South Asia
+Niger,4.725,Sub-Saharan Africa
+Ukraine,4.680,Commonwealth of Independent States
+Morocco,4.622,Middle East and North Africa
+Tunisia,4.552,Middle East and North Africa
+Mauritania,4.542,Sub-Saharan Africa
+Kenya,4.510,Sub-Saharan Africa
+Uganda,4.461,Sub-Saharan Africa
+Gambia,4.423,Sub-Saharan Africa
+India,4.389,South Asia
+Chad,4.384,Sub-Saharan Africa
+Burkina Faso,4.383,Sub-Saharan Africa
+Benin,4.357,Sub-Saharan Africa
+Somalia,4.347,Sub-Saharan Africa
+Mali,4.345,Sub-Saharan Africa
+Cambodia,4.341,Southeast Asia
+Ghana,4.340,Sub-Saharan Africa
+Myanmar,4.321,Southeast Asia
+Togo,4.315,Sub-Saharan Africa
+Jordan,4.310,Middle East and North Africa
+Liberia,4.277,Sub-Saharan Africa
+Madagascar,4.157,Sub-Saharan Africa
+Zambia,3.912,Sub-Saharan Africa
+Ethiopia,3.898,Sub-Saharan Africa
+Sri Lanka,3.891,South Asia
+Bangladesh,3.851,South Asia
+Egypt,3.817,Middle East and North Africa
+Tanzania,3.800,Sub-Saharan Africa
+Eswatini,3.774,Sub-Saharan Africa
+Lesotho,3.757,Sub-Saharan Africa
+Comoros,3.754,Sub-Saharan Africa
+Yemen,3.561,Middle East and North Africa
+DR Congo,3.469,Sub-Saharan Africa
+Botswana,3.438,Sub-Saharan Africa
+Zimbabwe,3.396,Sub-Saharan Africa
+Malawi,3.260,Sub-Saharan Africa
+Lebanon,3.188,Middle East and North Africa
+Sierra Leone,2.998,Sub-Saharan Africa
+Afghanistan,1.364,South Asia

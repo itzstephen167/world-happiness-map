@@ -21,6 +21,11 @@ Promise.all([
   const countries = topojson.feature(world, world.objects.countries);
   // Mercator blows up near the poles, so drop Antarctica.
   countries.features = countries.features.filter(d => d.properties.name !== "Antarctica");
+  // A few map shapes use older or shortened names; give them the names the scores use.
+  const SHAPE_NAMES = { "United States of America": "United States", "Bosnia and Herz.": "Bosnia and Herzegovina",
+    "Dominican Rep.": "Dominican Republic", "Macedonia": "North Macedonia", "Turkey": "Türkiye",
+    "eSwatini": "Eswatini", "Dem. Rep. Congo": "DR Congo" };
+  countries.features.forEach(f => { f.properties.name = SHAPE_NAMES[f.properties.name] || f.properties.name; });
 
   const projection = d3.geoMercator().fitExtent([[5, 5], [W - 5, H - 5]], countries);
   const path = d3.geoPath(projection);

@@ -26,4 +26,10 @@ Then open http://localhost:8000.
 
 ## Data
 
-`data/happiness.csv` (`country,score,region`) holds approximate World Happiness Report 2024 scores, with each country's World Happiness Report region (used for the regional average in the detail card). Country names must match the `name` property in world-atlas (e.g. `United States of America`, `Dem. Rep. Congo`). Replace with the official data before publishing.
+`data/happiness.csv` (`country,score,region`) holds the official World Happiness Report 2025 scores (life evaluations averaged over 2022–2024) with each country's World Happiness Report region, used for the regional averages. `data/happiness_history.csv` (`country,year,score`) has every year from 2011 to 2024 (the report has no 2013 row). Both are built from the report's "Data for Figure 2.1" spreadsheet in `data/raw/`:
+
+```bash
+python3 data/build_happiness.py
+```
+
+Country names follow common English usage; the few map shapes with different names (e.g. `Macedonia`, `Dem. Rep. Congo`) are renamed in `app.js`.

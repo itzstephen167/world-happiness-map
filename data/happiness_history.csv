@@ -1,0 +1,1970 @@
+country,year,score
+Afghanistan,2011,4.258
+Afghanistan,2012,4.040
+Afghanistan,2014,3.575
+Afghanistan,2015,3.360
+Afghanistan,2016,3.794
+Afghanistan,2017,3.632
+Afghanistan,2018,3.203
+Afghanistan,2019,2.567
+Afghanistan,2020,2.523
+Afghanistan,2021,2.404
+Afghanistan,2022,1.859
+Afghanistan,2023,1.721
+Afghanistan,2024,1.364
+Albania,2011,5.134
+Albania,2012,5.550
+Albania,2014,4.959
+Albania,2015,4.655
+Albania,2016,4.644
+Albania,2017,4.586
+Albania,2018,4.719
+Albania,2019,4.883
+Albania,2020,5.117
+Albania,2021,5.199
+Albania,2022,5.277
+Albania,2023,5.304
+Albania,2024,5.411
+Algeria,2011,5.368
+Algeria,2012,5.422
+Algeria,2014,5.605
+Algeria,2015,6.355
+Algeria,2016,5.872
+Algeria,2017,5.295
+Algeria,2018,5.211
+Algeria,2019,5.005
+Algeria,2020,4.887
+Algeria,2021,5.122
+Algeria,2022,5.329
+Algeria,2023,5.364
+Algeria,2024,5.571
+Angola,2011,4.178
+Angola,2012,5.589
+Angola,2014,4.033
+Angola,2015,3.866
+Angola,2016,3.795
+Angola,2017,3.795
+Argentina,2011,6.242
+Argentina,2012,6.562
+Argentina,2014,6.574
+Argentina,2015,6.650
+Argentina,2016,6.599
+Argentina,2017,6.388
+Argentina,2018,6.086
+Argentina,2019,5.975
+Argentina,2020,5.929
+Argentina,2021,5.967
+Argentina,2022,6.024
+Argentina,2023,6.188
+Argentina,2024,6.397
+Armenia,2011,4.474
+Armenia,2012,4.316
+Armenia,2014,4.350
+Armenia,2015,4.360
+Armenia,2016,4.376
+Armenia,2017,4.321
+Armenia,2018,4.559
+Armenia,2019,4.677
+Armenia,2020,5.283
+Armenia,2021,5.399
+Armenia,2022,5.342
+Armenia,2023,5.455
+Armenia,2024,5.494
+Australia,2011,7.345
+Australia,2012,7.350
+Australia,2014,7.284
+Australia,2015,7.313
+Australia,2016,7.284
+Australia,2017,7.272
+Australia,2018,7.228
+Australia,2019,7.223
+Australia,2020,7.183
+Australia,2021,7.162
+Australia,2022,7.095
+Australia,2023,7.057
+Australia,2024,6.974
+Austria,2011,7.227
+Austria,2012,7.369
+Austria,2014,7.200
+Austria,2015,7.119
+Austria,2016,7.006
+Austria,2017,7.139
+Austria,2018,7.246
+Austria,2019,7.294
+Austria,2020,7.268
+Austria,2021,7.163
+Austria,2022,7.097
+Austria,2023,6.905
+Austria,2024,6.810
+Azerbaijan,2011,4.582
+Azerbaijan,2012,4.604
+Azerbaijan,2014,5.212
+Azerbaijan,2015,5.291
+Azerbaijan,2016,5.234
+Azerbaijan,2017,5.201
+Azerbaijan,2018,5.208
+Azerbaijan,2019,5.165
+Azerbaijan,2020,5.171
+Azerbaijan,2021,5.173
+Azerbaijan,2023,4.893
+Azerbaijan,2024,4.875
+Bahrain,2011,5.568
+Bahrain,2012,5.312
+Bahrain,2014,5.960
+Bahrain,2015,6.218
+Bahrain,2016,6.087
+Bahrain,2017,6.105
+Bahrain,2018,6.199
+Bahrain,2019,6.227
+Bahrain,2020,6.647
+Bahrain,2021,6.647
+Bahrain,2022,6.173
+Bahrain,2023,5.959
+Bahrain,2024,6.030
+Bangladesh,2011,4.807
+Bangladesh,2012,4.804
+Bangladesh,2014,4.694
+Bangladesh,2015,4.643
+Bangladesh,2016,4.608
+Bangladesh,2017,4.500
+Bangladesh,2018,4.456
+Bangladesh,2019,4.833
+Bangladesh,2020,5.025
+Bangladesh,2021,5.155
+Bangladesh,2022,4.282
+Bangladesh,2023,3.886
+Bangladesh,2024,3.851
+Belarus,2011,5.566
+Belarus,2012,5.504
+Belarus,2014,5.813
+Belarus,2015,5.802
+Belarus,2016,5.569
+Belarus,2017,5.483
+Belarus,2018,5.323
+Belarus,2019,5.540
+Belarus,2020,5.534
+Belarus,2021,5.821
+Belgium,2011,7.113
+Belgium,2012,6.967
+Belgium,2014,6.937
+Belgium,2015,6.929
+Belgium,2016,6.891
+Belgium,2017,6.927
+Belgium,2018,6.923
+Belgium,2019,6.864
+Belgium,2020,6.834
+Belgium,2021,6.805
+Belgium,2022,6.859
+Belgium,2023,6.894
+Belgium,2024,6.910
+Belize,2011,6.451
+Belize,2015,5.956
+Belize,2016,5.956
+Belize,2017,5.956
+Belize,2024,6.711
+Benin,2011,3.493
+Benin,2012,3.528
+Benin,2014,3.340
+Benin,2015,3.484
+Benin,2016,3.657
+Benin,2017,4.141
+Benin,2018,4.883
+Benin,2019,5.216
+Benin,2020,5.045
+Benin,2021,4.623
+Benin,2022,4.374
+Benin,2023,4.377
+Benin,2024,4.357
+Bhutan,2014,5.253
+Bhutan,2015,5.196
+Bhutan,2016,5.011
+Bhutan,2017,5.082
+Bhutan,2018,5.082
+Bolivia,2011,5.633
+Bolivia,2012,5.857
+Bolivia,2014,5.890
+Bolivia,2015,5.822
+Bolivia,2016,5.823
+Bolivia,2017,5.752
+Bolivia,2018,5.779
+Bolivia,2019,5.747
+Bolivia,2020,5.716
+Bolivia,2021,5.600
+Bolivia,2022,5.684
+Bolivia,2023,5.784
+Bolivia,2024,5.868
+Bosnia and Herzegovina,2011,4.857
+Bosnia and Herzegovina,2012,4.813
+Bosnia and Herzegovina,2014,4.949
+Bosnia and Herzegovina,2015,5.163
+Bosnia and Herzegovina,2016,5.182
+Bosnia and Herzegovina,2017,5.129
+Bosnia and Herzegovina,2018,5.386
+Bosnia and Herzegovina,2019,5.674
+Bosnia and Herzegovina,2020,5.813
+Bosnia and Herzegovina,2021,5.768
+Bosnia and Herzegovina,2022,5.633
+Bosnia and Herzegovina,2023,5.877
+Bosnia and Herzegovina,2024,6.136
+Botswana,2011,4.581
+Botswana,2012,3.970
+Botswana,2014,4.332
+Botswana,2015,3.974
+Botswana,2016,3.766
+Botswana,2017,3.590
+Botswana,2018,3.488
+Botswana,2019,3.479
+Botswana,2020,3.467
+Botswana,2021,3.471
+Botswana,2022,3.435
+Botswana,2023,3.383
+Botswana,2024,3.438
+Brazil,2011,6.697
+Brazil,2012,6.849
+Brazil,2014,6.983
+Brazil,2015,6.952
+Brazil,2016,6.635
+Brazil,2017,6.419
+Brazil,2018,6.300
+Brazil,2019,6.376
+Brazil,2020,6.330
+Brazil,2021,6.293
+Brazil,2022,6.125
+Brazil,2023,6.272
+Brazil,2024,6.494
+Bulgaria,2011,3.889
+Bulgaria,2012,3.981
+Bulgaria,2014,4.218
+Bulgaria,2015,4.217
+Bulgaria,2016,4.714
+Bulgaria,2017,4.933
+Bulgaria,2018,5.011
+Bulgaria,2019,5.102
+Bulgaria,2020,5.266
+Bulgaria,2021,5.371
+Bulgaria,2022,5.466
+Bulgaria,2023,5.463
+Bulgaria,2024,5.554
+Burkina Faso,2011,3.926
+Burkina Faso,2012,4.259
+Burkina Faso,2014,3.587
+Burkina Faso,2015,3.739
+Burkina Faso,2016,4.032
+Burkina Faso,2017,4.424
+Burkina Faso,2018,4.587
+Burkina Faso,2019,4.769
+Burkina Faso,2020,4.834
+Burkina Faso,2021,4.670
+Burkina Faso,2022,4.638
+Burkina Faso,2023,4.548
+Burkina Faso,2024,4.383
+Burundi,2011,3.678
+Burundi,2012,3.706
+Burundi,2014,2.906
+Burundi,2015,2.905
+Burundi,2016,2.905
+Burundi,2017,2.905
+Burundi,2018,3.775
+Burundi,2019,3.775
+Burundi,2020,3.775
+Cambodia,2011,4.101
+Cambodia,2012,4.067
+Cambodia,2014,3.819
+Cambodia,2015,3.907
+Cambodia,2016,4.168
+Cambodia,2017,4.433
+Cambodia,2018,4.700
+Cambodia,2019,4.848
+Cambodia,2020,4.830
+Cambodia,2021,4.640
+Cambodia,2022,4.393
+Cambodia,2023,4.341
+Cambodia,2024,4.341
+Cameroon,2011,4.376
+Cameroon,2012,4.420
+Cameroon,2014,4.252
+Cameroon,2015,4.513
+Cameroon,2016,4.695
+Cameroon,2017,4.975
+Cameroon,2018,5.044
+Cameroon,2019,5.085
+Cameroon,2020,5.142
+Cameroon,2021,5.048
+Cameroon,2022,4.973
+Cameroon,2023,4.874
+Cameroon,2024,4.887
+Canada,2011,7.499
+Canada,2012,7.477
+Canada,2014,7.427
+Canada,2015,7.404
+Canada,2016,7.316
+Canada,2017,7.328
+Canada,2018,7.278
+Canada,2019,7.232
+Canada,2020,7.103
+Canada,2021,7.025
+Canada,2022,6.961
+Canada,2023,6.900
+Canada,2024,6.803
+Central African Republic,2011,3.568
+Central African Republic,2012,3.623
+Central African Republic,2014,3.678
+Central African Republic,2016,2.693
+Central African Republic,2017,3.083
+Central African Republic,2018,3.083
+Central African Republic,2019,3.476
+Chad,2011,3.919
+Chad,2012,4.056
+Chad,2014,3.667
+Chad,2015,3.763
+Chad,2016,3.936
+Chad,2017,4.301
+Chad,2018,4.350
+Chad,2019,4.423
+Chad,2020,4.355
+Chad,2021,4.251
+Chad,2022,4.397
+Chad,2023,4.471
+Chad,2024,4.384
+Chile,2011,6.128
+Chile,2012,6.587
+Chile,2014,6.670
+Chile,2015,6.705
+Chile,2016,6.652
+Chile,2017,6.476
+Chile,2018,6.444
+Chile,2019,6.228
+Chile,2020,6.172
+Chile,2021,6.172
+Chile,2022,6.334
+Chile,2023,6.360
+Chile,2024,6.361
+China,2011,4.680
+China,2012,4.978
+China,2014,5.140
+China,2015,5.245
+China,2016,5.273
+China,2017,5.246
+China,2018,5.191
+China,2019,5.124
+China,2020,5.339
+China,2021,5.585
+China,2022,5.818
+China,2023,5.973
+China,2024,5.921
+Colombia,2011,6.202
+Colombia,2012,6.416
+Colombia,2014,6.477
+Colombia,2015,6.481
+Colombia,2016,6.357
+Colombia,2017,6.260
+Colombia,2018,6.125
+Colombia,2019,6.163
+Colombia,2020,6.012
+Colombia,2021,5.781
+Colombia,2022,5.630
+Colombia,2023,5.695
+Colombia,2024,6.004
+Comoros,2011,3.700
+Comoros,2012,3.851
+Comoros,2014,3.956
+Comoros,2015,3.956
+Comoros,2018,3.973
+Comoros,2019,4.289
+Comoros,2020,4.289
+Comoros,2021,4.609
+Comoros,2022,3.545
+Comoros,2023,3.566
+Comoros,2024,3.754
+Congo,2011,3.820
+Congo,2012,4.297
+Congo,2014,3.989
+Congo,2015,4.236
+Congo,2016,4.291
+Congo,2017,4.559
+Congo,2018,4.812
+Congo,2019,5.194
+Congo,2020,5.342
+Congo,2021,5.075
+Congo,2022,5.267
+Congo,2023,5.221
+Congo,2024,5.030
+Costa Rica,2011,7.251
+Costa Rica,2012,7.257
+Costa Rica,2014,7.226
+Costa Rica,2015,7.087
+Costa Rica,2016,7.079
+Costa Rica,2017,7.072
+Costa Rica,2018,7.167
+Costa Rica,2019,7.121
+Costa Rica,2020,7.069
+Costa Rica,2021,6.582
+Costa Rica,2022,6.609
+Costa Rica,2023,6.955
+Costa Rica,2024,7.274
+Croatia,2011,5.623
+Croatia,2012,5.661
+Croatia,2014,5.759
+Croatia,2015,5.488
+Croatia,2016,5.293
+Croatia,2017,5.321
+Croatia,2018,5.432
+Croatia,2019,5.505
+Croatia,2020,5.882
+Croatia,2021,6.125
+Croatia,2022,6.125
+Croatia,2023,5.942
+Croatia,2024,5.870
+Cuba,2011,5.418
+Cyprus,2011,6.416
+Cyprus,2012,6.466
+Cyprus,2014,5.689
+Cyprus,2015,5.546
+Cyprus,2016,5.621
+Cyprus,2017,5.762
+Cyprus,2018,6.046
+Cyprus,2019,6.159
+Cyprus,2020,6.223
+Cyprus,2021,6.221
+Cyprus,2022,6.130
+Cyprus,2023,6.068
+Cyprus,2024,5.942
+Czechia,2011,6.360
+Czechia,2012,6.290
+Czechia,2014,6.505
+Czechia,2015,6.596
+Czechia,2016,6.609
+Czechia,2017,6.711
+Czechia,2018,6.852
+Czechia,2019,6.911
+Czechia,2020,6.965
+Czechia,2021,6.920
+Czechia,2022,6.845
+Czechia,2023,6.822
+Czechia,2024,6.775
+Côte d'Ivoire,2011,4.197
+Côte d'Ivoire,2014,3.655
+Côte d'Ivoire,2015,3.916
+Côte d'Ivoire,2016,4.180
+Côte d'Ivoire,2017,4.671
+Côte d'Ivoire,2018,4.944
+Côte d'Ivoire,2019,5.233
+Côte d'Ivoire,2020,5.306
+Côte d'Ivoire,2021,5.235
+Côte d'Ivoire,2022,5.053
+Côte d'Ivoire,2023,5.080
+Côte d'Ivoire,2024,5.102
+DR Congo,2011,3.984
+DR Congo,2012,4.578
+DR Congo,2014,4.517
+DR Congo,2015,4.272
+DR Congo,2016,4.280
+DR Congo,2017,4.245
+DR Congo,2018,4.418
+DR Congo,2019,4.311
+DR Congo,2022,3.207
+DR Congo,2023,3.295
+DR Congo,2024,3.469
+Denmark,2011,7.856
+Denmark,2012,7.693
+Denmark,2014,7.527
+Denmark,2015,7.526
+Denmark,2016,7.522
+Denmark,2017,7.555
+Denmark,2018,7.600
+Denmark,2019,7.646
+Denmark,2020,7.620
+Denmark,2021,7.636
+Denmark,2022,7.586
+Denmark,2023,7.583
+Denmark,2024,7.521
+Djibouti,2011,4.957
+Djibouti,2012,4.690
+Djibouti,2014,4.369
+Dominican Republic,2011,5.036
+Dominican Republic,2012,4.963
+Dominican Republic,2014,4.885
+Dominican Republic,2015,5.155
+Dominican Republic,2016,5.230
+Dominican Republic,2017,5.302
+Dominican Republic,2018,5.425
+Dominican Republic,2019,5.689
+Dominican Republic,2020,5.545
+Dominican Republic,2021,5.737
+Dominican Republic,2022,5.569
+Dominican Republic,2023,5.823
+Dominican Republic,2024,5.846
+Ecuador,2011,5.425
+Ecuador,2012,5.865
+Ecuador,2014,5.975
+Ecuador,2015,5.976
+Ecuador,2016,6.008
+Ecuador,2017,5.973
+Ecuador,2018,6.028
+Ecuador,2019,5.925
+Ecuador,2020,5.764
+Ecuador,2021,5.533
+Ecuador,2022,5.559
+Ecuador,2023,5.725
+Ecuador,2024,5.965
+Egypt,2011,4.853
+Egypt,2012,4.273
+Egypt,2014,4.194
+Egypt,2015,4.362
+Egypt,2016,4.735
+Egypt,2017,4.419
+Egypt,2018,4.166
+Egypt,2019,4.151
+Egypt,2020,4.283
+Egypt,2021,4.288
+Egypt,2022,4.170
+Egypt,2023,3.977
+Egypt,2024,3.817
+El Salvador,2011,5.956
+El Salvador,2012,5.809
+El Salvador,2014,6.130
+El Salvador,2015,6.068
+El Salvador,2016,6.003
+El Salvador,2017,6.167
+El Salvador,2018,6.253
+El Salvador,2019,6.348
+El Salvador,2020,6.061
+El Salvador,2021,6.120
+El Salvador,2022,6.122
+El Salvador,2023,6.469
+El Salvador,2024,6.492
+Estonia,2011,5.330
+Estonia,2012,5.426
+Estonia,2014,5.429
+Estonia,2015,5.517
+Estonia,2016,5.611
+Estonia,2017,5.739
+Estonia,2018,5.893
+Estonia,2019,6.022
+Estonia,2020,6.189
+Estonia,2021,6.341
+Estonia,2022,6.455
+Estonia,2023,6.448
+Estonia,2024,6.417
+Eswatini,2012,4.867
+Eswatini,2014,4.867
+Eswatini,2018,4.212
+Eswatini,2019,4.308
+Eswatini,2020,4.308
+Eswatini,2021,4.396
+Eswatini,2023,3.502
+Eswatini,2024,3.774
+Ethiopia,2011,4.064
+Ethiopia,2012,4.561
+Ethiopia,2014,4.512
+Ethiopia,2015,4.508
+Ethiopia,2016,4.460
+Ethiopia,2017,4.350
+Ethiopia,2018,4.286
+Ethiopia,2019,4.186
+Ethiopia,2020,4.275
+Ethiopia,2021,4.241
+Ethiopia,2022,4.091
+Ethiopia,2023,3.861
+Ethiopia,2024,3.898
+Finland,2011,7.579
+Finland,2012,7.389
+Finland,2014,7.406
+Finland,2015,7.413
+Finland,2016,7.469
+Finland,2017,7.632
+Finland,2018,7.769
+Finland,2019,7.809
+Finland,2020,7.842
+Finland,2021,7.821
+Finland,2022,7.804
+Finland,2023,7.741
+Finland,2024,7.736
+France,2011,6.746
+France,2012,6.764
+France,2014,6.575
+France,2015,6.478
+France,2016,6.442
+France,2017,6.489
+France,2018,6.592
+France,2019,6.664
+France,2020,6.690
+France,2021,6.687
+France,2022,6.661
+France,2023,6.609
+France,2024,6.593
+Gabon,2012,4.114
+Gabon,2014,3.896
+Gabon,2015,4.121
+Gabon,2016,4.465
+Gabon,2017,4.758
+Gabon,2018,4.799
+Gabon,2019,4.829
+Gabon,2020,4.852
+Gabon,2021,4.958
+Gabon,2022,5.035
+Gabon,2023,5.106
+Gabon,2024,5.120
+Gambia,2018,4.516
+Gambia,2019,4.751
+Gambia,2020,5.051
+Gambia,2021,5.164
+Gambia,2022,4.279
+Gambia,2023,4.485
+Gambia,2024,4.423
+Georgia,2011,3.892
+Georgia,2012,4.187
+Georgia,2014,4.297
+Georgia,2015,4.252
+Georgia,2016,4.286
+Georgia,2017,4.340
+Georgia,2018,4.519
+Georgia,2019,4.673
+Georgia,2020,4.891
+Georgia,2021,4.973
+Georgia,2022,5.109
+Georgia,2023,5.185
+Georgia,2024,5.400
+Germany,2011,6.572
+Germany,2012,6.672
+Germany,2014,6.750
+Germany,2015,6.994
+Germany,2016,6.951
+Germany,2017,6.965
+Germany,2018,6.985
+Germany,2019,7.076
+Germany,2020,7.155
+Germany,2021,7.034
+Germany,2022,6.892
+Germany,2023,6.719
+Germany,2024,6.753
+Ghana,2011,4.705
+Ghana,2012,5.091
+Ghana,2014,4.633
+Ghana,2015,4.276
+Ghana,2016,4.120
+Ghana,2017,4.657
+Ghana,2018,4.996
+Ghana,2019,5.148
+Ghana,2020,5.088
+Ghana,2021,4.872
+Ghana,2022,4.605
+Ghana,2023,4.289
+Ghana,2024,4.340
+Greece,2011,6.133
+Greece,2012,5.435
+Greece,2014,4.857
+Greece,2015,5.033
+Greece,2016,5.227
+Greece,2017,5.358
+Greece,2018,5.287
+Greece,2019,5.515
+Greece,2020,5.723
+Greece,2021,5.948
+Greece,2022,5.931
+Greece,2023,5.934
+Greece,2024,5.776
+Guatemala,2011,6.277
+Guatemala,2012,5.965
+Guatemala,2014,6.123
+Guatemala,2015,6.324
+Guatemala,2016,6.454
+Guatemala,2017,6.382
+Guatemala,2018,6.436
+Guatemala,2019,6.399
+Guatemala,2020,6.435
+Guatemala,2021,6.262
+Guatemala,2022,6.150
+Guatemala,2023,6.287
+Guatemala,2024,6.362
+Guinea,2011,4.171
+Guinea,2012,3.847
+Guinea,2014,3.656
+Guinea,2015,3.607
+Guinea,2016,3.507
+Guinea,2017,3.964
+Guinea,2018,4.534
+Guinea,2019,4.949
+Guinea,2020,4.984
+Guinea,2021,4.891
+Guinea,2022,5.072
+Guinea,2023,5.023
+Guinea,2024,4.929
+Guyana,2011,5.993
+Haiti,2011,3.789
+Haiti,2012,4.341
+Haiti,2014,4.518
+Haiti,2015,4.028
+Haiti,2016,3.603
+Haiti,2017,3.582
+Haiti,2018,3.597
+Haiti,2019,3.721
+Haiti,2020,3.615
+Honduras,2011,5.564
+Honduras,2012,5.142
+Honduras,2014,4.788
+Honduras,2015,4.871
+Honduras,2016,5.181
+Honduras,2017,5.504
+Honduras,2018,5.860
+Honduras,2019,5.953
+Honduras,2020,5.919
+Honduras,2021,6.022
+Honduras,2022,6.023
+Honduras,2023,5.968
+Honduras,2024,5.964
+Hong Kong,2011,5.424
+Hong Kong,2012,5.523
+Hong Kong,2014,5.474
+Hong Kong,2015,5.458
+Hong Kong,2016,5.472
+Hong Kong,2017,5.430
+Hong Kong,2018,5.430
+Hong Kong,2019,5.510
+Hong Kong,2020,5.477
+Hong Kong,2021,5.425
+Hong Kong,2022,5.308
+Hong Kong,2023,5.316
+Hong Kong,2024,5.491
+Hungary,2011,4.943
+Hungary,2012,4.775
+Hungary,2014,4.800
+Hungary,2015,5.145
+Hungary,2016,5.324
+Hungary,2017,5.620
+Hungary,2018,5.758
+Hungary,2019,6.000
+Hungary,2020,5.992
+Hungary,2021,6.086
+Hungary,2022,6.041
+Hungary,2023,6.017
+Hungary,2024,5.915
+Iceland,2011,6.888
+Iceland,2012,7.355
+Iceland,2014,7.561
+Iceland,2015,7.501
+Iceland,2016,7.504
+Iceland,2017,7.495
+Iceland,2018,7.494
+Iceland,2019,7.504
+Iceland,2020,7.554
+Iceland,2021,7.557
+Iceland,2022,7.530
+Iceland,2023,7.525
+Iceland,2024,7.515
+India,2011,4.975
+India,2012,4.772
+India,2014,4.565
+India,2015,4.404
+India,2016,4.315
+India,2017,4.190
+India,2018,4.015
+India,2019,3.573
+India,2020,3.819
+India,2021,3.777
+India,2022,4.036
+India,2023,4.054
+India,2024,4.389
+Indonesia,2011,5.159
+Indonesia,2012,5.348
+Indonesia,2014,5.399
+Indonesia,2015,5.314
+Indonesia,2016,5.262
+Indonesia,2017,5.093
+Indonesia,2018,5.192
+Indonesia,2019,5.286
+Indonesia,2020,5.345
+Indonesia,2021,5.240
+Indonesia,2022,5.277
+Indonesia,2023,5.568
+Indonesia,2024,5.617
+Iran,2011,5.149
+Iran,2012,4.643
+Iran,2014,4.686
+Iran,2015,4.813
+Iran,2016,4.692
+Iran,2017,4.707
+Iran,2018,4.548
+Iran,2019,4.672
+Iran,2020,4.721
+Iran,2021,4.888
+Iran,2022,4.876
+Iran,2023,4.923
+Iran,2024,5.093
+Iraq,2011,4.882
+Iraq,2012,4.817
+Iraq,2014,4.677
+Iraq,2015,4.575
+Iraq,2016,4.497
+Iraq,2017,4.456
+Iraq,2018,4.437
+Iraq,2019,4.785
+Iraq,2020,4.854
+Iraq,2021,4.941
+Iraq,2022,4.941
+Iraq,2023,5.166
+Iraq,2024,4.976
+Ireland,2011,7.284
+Ireland,2012,7.076
+Ireland,2014,6.940
+Ireland,2015,6.907
+Ireland,2016,6.977
+Ireland,2017,6.977
+Ireland,2018,7.021
+Ireland,2019,7.094
+Ireland,2020,7.085
+Ireland,2021,7.041
+Ireland,2022,6.911
+Ireland,2023,6.838
+Ireland,2024,6.889
+Israel,2011,7.199
+Israel,2012,7.301
+Israel,2014,7.278
+Israel,2015,7.267
+Israel,2016,7.213
+Israel,2017,7.190
+Israel,2018,7.139
+Israel,2019,7.129
+Israel,2020,7.157
+Israel,2021,7.364
+Israel,2022,7.473
+Israel,2023,7.341
+Israel,2024,7.234
+Italy,2011,6.578
+Italy,2012,6.021
+Italy,2014,5.948
+Italy,2015,5.977
+Italy,2016,5.964
+Italy,2017,6.000
+Italy,2018,6.223
+Italy,2019,6.387
+Italy,2020,6.483
+Italy,2021,6.467
+Italy,2022,6.405
+Italy,2023,6.324
+Italy,2024,6.415
+Jamaica,2011,6.208
+Jamaica,2012,5.374
+Jamaica,2014,5.709
+Jamaica,2015,5.510
+Jamaica,2016,5.311
+Jamaica,2017,5.890
+Jamaica,2018,5.890
+Jamaica,2019,5.890
+Jamaica,2020,6.309
+Jamaica,2021,5.850
+Jamaica,2022,5.703
+Jamaica,2023,5.842
+Jamaica,2024,5.870
+Japan,2011,6.059
+Japan,2012,6.064
+Japan,2014,5.987
+Japan,2015,5.921
+Japan,2016,5.920
+Japan,2017,5.915
+Japan,2018,5.886
+Japan,2019,5.871
+Japan,2020,5.940
+Japan,2021,6.039
+Japan,2022,6.129
+Japan,2023,6.060
+Japan,2024,6.147
+Jordan,2011,5.706
+Jordan,2012,5.414
+Jordan,2014,5.192
+Jordan,2015,5.303
+Jordan,2016,5.336
+Jordan,2017,5.161
+Jordan,2018,4.906
+Jordan,2019,4.633
+Jordan,2020,4.395
+Jordan,2021,4.152
+Jordan,2022,4.120
+Jordan,2023,4.186
+Jordan,2024,4.310
+Kazakhstan,2011,5.594
+Kazakhstan,2012,5.671
+Kazakhstan,2014,5.855
+Kazakhstan,2015,5.919
+Kazakhstan,2016,5.819
+Kazakhstan,2017,5.790
+Kazakhstan,2018,5.809
+Kazakhstan,2019,6.058
+Kazakhstan,2020,6.152
+Kazakhstan,2021,6.234
+Kazakhstan,2022,6.144
+Kazakhstan,2023,6.188
+Kazakhstan,2024,6.378
+Kenya,2011,4.180
+Kenya,2012,4.403
+Kenya,2014,4.419
+Kenya,2015,4.356
+Kenya,2016,4.553
+Kenya,2017,4.410
+Kenya,2018,4.509
+Kenya,2019,4.583
+Kenya,2020,4.607
+Kenya,2021,4.543
+Kenya,2022,4.487
+Kenya,2023,4.470
+Kenya,2024,4.510
+Kosovo,2011,5.420
+Kosovo,2012,5.222
+Kosovo,2014,5.589
+Kosovo,2015,5.401
+Kosovo,2016,5.279
+Kosovo,2017,5.662
+Kosovo,2018,6.100
+Kosovo,2019,6.325
+Kosovo,2020,6.372
+Kosovo,2021,6.455
+Kosovo,2022,6.368
+Kosovo,2023,6.561
+Kosovo,2024,6.659
+Kuwait,2011,6.574
+Kuwait,2012,6.515
+Kuwait,2014,6.295
+Kuwait,2015,6.239
+Kuwait,2016,6.105
+Kuwait,2017,6.083
+Kuwait,2018,6.021
+Kuwait,2019,6.102
+Kuwait,2020,6.106
+Kuwait,2021,6.106
+Kuwait,2023,6.951
+Kuwait,2024,6.629
+Kyrgyzstan,2011,4.828
+Kyrgyzstan,2012,5.042
+Kyrgyzstan,2014,5.286
+Kyrgyzstan,2015,5.185
+Kyrgyzstan,2016,5.004
+Kyrgyzstan,2017,5.131
+Kyrgyzstan,2018,5.261
+Kyrgyzstan,2019,5.542
+Kyrgyzstan,2020,5.744
+Kyrgyzstan,2021,5.828
+Kyrgyzstan,2022,5.825
+Kyrgyzstan,2023,5.714
+Kyrgyzstan,2024,5.858
+Laos,2011,5.161
+Laos,2012,4.787
+Laos,2014,4.876
+Laos,2015,4.876
+Laos,2017,4.623
+Laos,2018,4.796
+Laos,2019,4.889
+Laos,2020,5.030
+Laos,2021,5.140
+Laos,2022,5.111
+Laos,2023,5.139
+Laos,2024,5.301
+Latvia,2011,4.762
+Latvia,2012,5.046
+Latvia,2014,5.098
+Latvia,2015,5.560
+Latvia,2016,5.850
+Latvia,2017,5.933
+Latvia,2018,5.940
+Latvia,2019,5.950
+Latvia,2020,6.032
+Latvia,2021,6.180
+Latvia,2022,6.213
+Latvia,2023,6.234
+Latvia,2024,6.207
+Lebanon,2011,5.049
+Lebanon,2012,4.931
+Lebanon,2014,4.839
+Lebanon,2015,5.129
+Lebanon,2016,5.225
+Lebanon,2017,5.199
+Lebanon,2018,5.197
+Lebanon,2019,4.772
+Lebanon,2020,4.584
+Lebanon,2021,2.955
+Lebanon,2022,2.392
+Lebanon,2023,2.707
+Lebanon,2024,3.188
+Lesotho,2012,4.898
+Lesotho,2014,4.898
+Lesotho,2016,3.808
+Lesotho,2017,3.808
+Lesotho,2018,3.802
+Lesotho,2019,3.653
+Lesotho,2020,3.512
+Lesotho,2021,3.512
+Lesotho,2023,3.186
+Lesotho,2024,3.757
+Liberia,2011,4.040
+Liberia,2012,4.196
+Liberia,2014,4.571
+Liberia,2015,3.622
+Liberia,2016,3.533
+Liberia,2017,3.495
+Liberia,2018,3.975
+Liberia,2019,4.558
+Liberia,2020,4.625
+Liberia,2021,5.122
+Liberia,2022,4.042
+Liberia,2023,4.269
+Liberia,2024,4.277
+Libya,2011,5.178
+Libya,2012,5.340
+Libya,2014,5.754
+Libya,2015,5.615
+Libya,2016,5.525
+Libya,2017,5.566
+Libya,2018,5.525
+Libya,2019,5.489
+Libya,2020,5.410
+Libya,2021,5.330
+Libya,2023,5.866
+Libya,2024,5.820
+Lithuania,2011,5.588
+Lithuania,2012,5.426
+Lithuania,2014,5.833
+Lithuania,2015,5.813
+Lithuania,2016,5.902
+Lithuania,2017,5.952
+Lithuania,2018,6.149
+Lithuania,2019,6.215
+Lithuania,2020,6.255
+Lithuania,2021,6.446
+Lithuania,2022,6.763
+Lithuania,2023,6.818
+Lithuania,2024,6.829
+Luxembourg,2011,7.051
+Luxembourg,2012,7.054
+Luxembourg,2014,6.946
+Luxembourg,2015,6.871
+Luxembourg,2016,6.863
+Luxembourg,2017,6.910
+Luxembourg,2018,7.090
+Luxembourg,2019,7.238
+Luxembourg,2020,7.324
+Luxembourg,2021,7.404
+Luxembourg,2022,7.228
+Luxembourg,2023,7.122
+Luxembourg,2024,7.122
+Madagascar,2011,4.309
+Madagascar,2012,3.966
+Madagascar,2014,3.681
+Madagascar,2015,3.695
+Madagascar,2016,3.644
+Madagascar,2017,3.774
+Madagascar,2018,3.933
+Madagascar,2019,4.166
+Madagascar,2020,4.208
+Madagascar,2021,4.339
+Madagascar,2022,4.019
+Madagascar,2023,4.228
+Madagascar,2024,4.157
+Malawi,2011,4.624
+Malawi,2012,4.113
+Malawi,2014,4.292
+Malawi,2015,4.156
+Malawi,2016,3.970
+Malawi,2017,3.587
+Malawi,2018,3.410
+Malawi,2019,3.538
+Malawi,2020,3.600
+Malawi,2021,3.750
+Malawi,2022,3.495
+Malawi,2023,3.421
+Malawi,2024,3.260
+Malaysia,2011,5.823
+Malaysia,2012,5.760
+Malaysia,2014,5.770
+Malaysia,2015,6.005
+Malaysia,2016,6.084
+Malaysia,2017,6.322
+Malaysia,2018,5.339
+Malaysia,2019,5.384
+Malaysia,2020,5.384
+Malaysia,2021,5.711
+Malaysia,2022,6.012
+Malaysia,2023,5.975
+Malaysia,2024,5.955
+Maldives,2019,5.198
+Maldives,2020,5.198
+Mali,2011,3.967
+Mali,2012,4.247
+Mali,2014,3.995
+Mali,2015,4.073
+Mali,2016,4.190
+Mali,2017,4.447
+Mali,2018,4.390
+Mali,2019,4.729
+Mali,2020,4.723
+Mali,2021,4.479
+Mali,2022,4.198
+Mali,2023,4.232
+Mali,2024,4.345
+Malta,2011,5.960
+Malta,2012,5.964
+Malta,2014,6.302
+Malta,2015,6.488
+Malta,2016,6.527
+Malta,2017,6.627
+Malta,2018,6.726
+Malta,2019,6.773
+Malta,2020,6.602
+Malta,2021,6.447
+Malta,2022,6.300
+Malta,2023,6.346
+Malta,2024,6.316
+Mauritania,2011,4.643
+Mauritania,2012,4.758
+Mauritania,2014,4.436
+Mauritania,2015,4.201
+Mauritania,2016,4.292
+Mauritania,2017,4.356
+Mauritania,2018,4.490
+Mauritania,2019,4.375
+Mauritania,2020,4.227
+Mauritania,2021,4.153
+Mauritania,2022,4.724
+Mauritania,2023,4.505
+Mauritania,2024,4.542
+Mauritius,2011,5.477
+Mauritius,2012,5.477
+Mauritius,2014,5.477
+Mauritius,2015,5.648
+Mauritius,2016,5.629
+Mauritius,2017,5.891
+Mauritius,2018,5.888
+Mauritius,2019,6.101
+Mauritius,2020,6.049
+Mauritius,2021,6.071
+Mauritius,2022,5.902
+Mauritius,2023,5.816
+Mauritius,2024,5.832
+Mexico,2011,6.740
+Mexico,2012,7.088
+Mexico,2014,7.187
+Mexico,2015,6.778
+Mexico,2016,6.578
+Mexico,2017,6.488
+Mexico,2018,6.595
+Mexico,2019,6.465
+Mexico,2020,6.317
+Mexico,2021,6.128
+Mexico,2022,6.330
+Mexico,2023,6.678
+Mexico,2024,6.979
+Moldova,2011,5.305
+Moldova,2012,5.791
+Moldova,2014,5.889
+Moldova,2015,5.897
+Moldova,2016,5.838
+Moldova,2017,5.640
+Moldova,2018,5.529
+Moldova,2019,5.608
+Moldova,2020,5.766
+Moldova,2021,5.857
+Moldova,2022,5.819
+Moldova,2023,5.816
+Moldova,2024,5.819
+Mongolia,2011,4.562
+Mongolia,2012,4.834
+Mongolia,2014,4.874
+Mongolia,2015,4.907
+Mongolia,2016,4.955
+Mongolia,2017,5.125
+Mongolia,2018,5.285
+Mongolia,2019,5.456
+Mongolia,2020,5.677
+Mongolia,2021,5.761
+Mongolia,2022,5.840
+Mongolia,2023,5.696
+Mongolia,2024,5.833
+Montenegro,2011,5.147
+Montenegro,2012,5.299
+Montenegro,2014,5.192
+Montenegro,2015,5.161
+Montenegro,2016,5.237
+Montenegro,2017,5.347
+Montenegro,2018,5.523
+Montenegro,2019,5.546
+Montenegro,2020,5.581
+Montenegro,2021,5.547
+Montenegro,2022,5.722
+Montenegro,2023,5.707
+Montenegro,2024,5.877
+Morocco,2011,4.793
+Morocco,2012,4.885
+Morocco,2014,5.013
+Morocco,2015,5.151
+Morocco,2016,5.235
+Morocco,2017,5.254
+Morocco,2018,5.208
+Morocco,2019,5.095
+Morocco,2020,4.918
+Morocco,2021,5.060
+Morocco,2022,4.903
+Morocco,2023,4.795
+Morocco,2024,4.622
+Mozambique,2011,4.693
+Mozambique,2012,4.971
+Mozambique,2014,4.971
+Mozambique,2016,4.550
+Mozambique,2017,4.417
+Mozambique,2018,4.466
+Mozambique,2019,4.624
+Mozambique,2020,4.794
+Mozambique,2021,5.048
+Mozambique,2022,4.954
+Mozambique,2023,5.216
+Mozambique,2024,5.190
+Myanmar,2011,5.322
+Myanmar,2012,4.439
+Myanmar,2014,4.307
+Myanmar,2015,4.395
+Myanmar,2016,4.545
+Myanmar,2017,4.308
+Myanmar,2018,4.360
+Myanmar,2019,4.308
+Myanmar,2020,4.426
+Myanmar,2021,4.394
+Myanmar,2022,4.372
+Myanmar,2023,4.354
+Myanmar,2024,4.321
+Namibia,2011,4.886
+Namibia,2015,4.574
+Namibia,2016,4.574
+Namibia,2017,4.441
+Namibia,2018,4.639
+Namibia,2019,4.571
+Namibia,2020,4.574
+Namibia,2021,4.459
+Namibia,2022,4.631
+Namibia,2023,4.832
+Namibia,2024,4.911
+Nepal,2011,4.474
+Nepal,2012,4.156
+Nepal,2014,4.514
+Nepal,2015,4.793
+Nepal,2016,4.962
+Nepal,2017,4.880
+Nepal,2018,4.913
+Nepal,2019,5.137
+Nepal,2020,5.269
+Nepal,2021,5.377
+Nepal,2022,5.360
+Nepal,2023,5.158
+Nepal,2024,5.311
+Netherlands,2011,7.512
+Netherlands,2012,7.512
+Netherlands,2014,7.378
+Netherlands,2015,7.339
+Netherlands,2016,7.377
+Netherlands,2017,7.441
+Netherlands,2018,7.488
+Netherlands,2019,7.449
+Netherlands,2020,7.464
+Netherlands,2021,7.415
+Netherlands,2022,7.403
+Netherlands,2023,7.319
+Netherlands,2024,7.306
+New Zealand,2011,7.372
+New Zealand,2012,7.221
+New Zealand,2014,7.286
+New Zealand,2015,7.334
+New Zealand,2016,7.314
+New Zealand,2017,7.324
+New Zealand,2018,7.307
+New Zealand,2019,7.300
+New Zealand,2020,7.277
+New Zealand,2021,7.200
+New Zealand,2022,7.123
+New Zealand,2023,7.029
+New Zealand,2024,6.952
+Nicaragua,2011,5.115
+Nicaragua,2012,5.507
+Nicaragua,2014,5.828
+Nicaragua,2015,5.992
+Nicaragua,2016,6.071
+Nicaragua,2017,6.141
+Nicaragua,2018,6.105
+Nicaragua,2019,6.137
+Nicaragua,2020,5.972
+Nicaragua,2021,6.165
+Nicaragua,2022,6.259
+Nicaragua,2023,6.284
+Nicaragua,2024,6.330
+Niger,2011,4.122
+Niger,2012,4.152
+Niger,2014,3.845
+Niger,2015,3.856
+Niger,2016,4.028
+Niger,2017,4.166
+Niger,2018,4.628
+Niger,2019,4.910
+Niger,2020,5.074
+Niger,2021,5.003
+Niger,2022,4.501
+Niger,2023,4.556
+Niger,2024,4.725
+Nigeria,2011,4.856
+Nigeria,2012,5.248
+Nigeria,2014,5.268
+Nigeria,2015,4.875
+Nigeria,2016,5.074
+Nigeria,2017,5.155
+Nigeria,2018,5.265
+Nigeria,2019,4.724
+Nigeria,2020,4.759
+Nigeria,2021,4.552
+Nigeria,2022,4.981
+Nigeria,2023,4.881
+Nigeria,2024,4.885
+North Cyprus,2012,5.463
+North Cyprus,2014,5.695
+North Cyprus,2015,5.771
+North Cyprus,2016,5.810
+North Cyprus,2017,5.835
+North Cyprus,2018,5.718
+North Cyprus,2019,5.536
+North Cyprus,2020,5.536
+North Cyprus,2021,5.467
+North Macedonia,2011,4.369
+North Macedonia,2012,4.574
+North Macedonia,2014,5.007
+North Macedonia,2015,5.121
+North Macedonia,2016,5.175
+North Macedonia,2017,5.185
+North Macedonia,2018,5.274
+North Macedonia,2019,5.160
+North Macedonia,2020,5.101
+North Macedonia,2021,5.199
+North Macedonia,2022,5.254
+North Macedonia,2023,5.369
+North Macedonia,2024,5.503
+Norway,2011,7.524
+Norway,2012,7.655
+Norway,2014,7.522
+Norway,2015,7.498
+Norway,2016,7.537
+Norway,2017,7.594
+Norway,2018,7.554
+Norway,2019,7.488
+Norway,2020,7.392
+Norway,2021,7.365
+Norway,2022,7.315
+Norway,2023,7.302
+Norway,2024,7.262
+Oman,2012,6.853
+Oman,2014,6.853
+Oman,2024,6.197
+Pakistan,2011,5.149
+Pakistan,2012,5.292
+Pakistan,2014,5.194
+Pakistan,2015,5.132
+Pakistan,2016,5.269
+Pakistan,2017,5.472
+Pakistan,2018,5.653
+Pakistan,2019,5.693
+Pakistan,2020,4.934
+Pakistan,2021,4.516
+Pakistan,2022,4.555
+Pakistan,2023,4.657
+Pakistan,2024,4.768
+Palestine,2011,4.555
+Palestine,2012,4.700
+Palestine,2014,4.715
+Palestine,2015,4.754
+Palestine,2016,4.775
+Palestine,2017,4.743
+Palestine,2018,4.696
+Palestine,2019,4.553
+Palestine,2020,4.517
+Palestine,2021,4.483
+Palestine,2022,4.908
+Palestine,2023,4.879
+Palestine,2024,4.780
+Panama,2011,6.863
+Panama,2012,7.143
+Panama,2014,6.786
+Panama,2015,6.701
+Panama,2016,6.452
+Panama,2017,6.430
+Panama,2018,6.321
+Panama,2019,6.305
+Panama,2020,6.180
+Panama,2021,6.309
+Panama,2022,6.265
+Panama,2023,6.358
+Panama,2024,6.407
+Paraguay,2011,5.398
+Paraguay,2012,5.779
+Paraguay,2014,5.878
+Paraguay,2015,5.538
+Paraguay,2016,5.493
+Paraguay,2017,5.681
+Paraguay,2018,5.743
+Paraguay,2019,5.692
+Paraguay,2020,5.653
+Paraguay,2021,5.578
+Paraguay,2022,5.738
+Paraguay,2023,5.977
+Paraguay,2024,6.172
+Peru,2011,5.258
+Peru,2012,5.776
+Peru,2014,5.824
+Peru,2015,5.743
+Peru,2016,5.715
+Peru,2017,5.663
+Peru,2018,5.697
+Peru,2019,5.797
+Peru,2020,5.840
+Peru,2021,5.559
+Peru,2022,5.526
+Peru,2023,5.841
+Peru,2024,5.947
+Philippines,2011,4.825
+Philippines,2012,4.985
+Philippines,2014,5.073
+Philippines,2015,5.279
+Philippines,2016,5.430
+Philippines,2017,5.524
+Philippines,2018,5.631
+Philippines,2019,6.006
+Philippines,2020,5.880
+Philippines,2021,5.904
+Philippines,2022,5.523
+Philippines,2023,6.048
+Philippines,2024,6.107
+Poland,2011,5.803
+Poland,2012,5.822
+Poland,2014,5.791
+Poland,2015,5.835
+Poland,2016,5.973
+Poland,2017,6.123
+Poland,2018,6.182
+Poland,2019,6.186
+Poland,2020,6.166
+Poland,2021,6.123
+Poland,2022,6.260
+Poland,2023,6.442
+Poland,2024,6.673
+Portugal,2011,5.327
+Portugal,2012,5.101
+Portugal,2014,5.102
+Portugal,2015,5.123
+Portugal,2016,5.195
+Portugal,2017,5.410
+Portugal,2018,5.693
+Portugal,2019,5.911
+Portugal,2020,5.929
+Portugal,2021,6.016
+Portugal,2022,5.968
+Portugal,2023,6.030
+Portugal,2024,6.013
+Puerto Rico,2011,6.593
+Puerto Rico,2015,7.039
+Qatar,2011,6.569
+Qatar,2012,6.666
+Qatar,2014,6.611
+Qatar,2015,6.375
+Qatar,2016,6.375
+Qatar,2017,6.374
+Qatar,2018,6.374
+Romania,2011,5.178
+Romania,2012,5.033
+Romania,2014,5.124
+Romania,2015,5.528
+Romania,2016,5.825
+Romania,2017,5.945
+Romania,2018,6.070
+Romania,2019,6.124
+Romania,2020,6.140
+Romania,2021,6.477
+Romania,2022,6.589
+Romania,2023,6.491
+Romania,2024,6.563
+Russia,2011,5.284
+Russia,2012,5.464
+Russia,2014,5.716
+Russia,2015,5.856
+Russia,2016,5.963
+Russia,2017,5.810
+Russia,2018,5.648
+Russia,2019,5.546
+Russia,2020,5.477
+Russia,2021,5.459
+Russia,2022,5.661
+Russia,2023,5.785
+Russia,2024,5.945
+Rwanda,2011,4.204
+Rwanda,2012,3.715
+Rwanda,2014,3.465
+Rwanda,2015,3.515
+Rwanda,2016,3.471
+Rwanda,2017,3.408
+Rwanda,2018,3.334
+Rwanda,2019,3.312
+Rwanda,2020,3.415
+Rwanda,2021,3.268
+Saudi Arabia,2011,6.597
+Saudi Arabia,2012,6.480
+Saudi Arabia,2014,6.411
+Saudi Arabia,2015,6.379
+Saudi Arabia,2016,6.344
+Saudi Arabia,2017,6.371
+Saudi Arabia,2018,6.375
+Saudi Arabia,2019,6.406
+Saudi Arabia,2020,6.494
+Saudi Arabia,2021,6.523
+Saudi Arabia,2022,6.463
+Saudi Arabia,2023,6.594
+Saudi Arabia,2024,6.600
+Senegal,2011,4.414
+Senegal,2012,3.959
+Senegal,2014,3.904
+Senegal,2015,4.219
+Senegal,2016,4.535
+Senegal,2017,4.631
+Senegal,2018,4.681
+Senegal,2019,4.981
+Senegal,2020,5.132
+Senegal,2021,5.046
+Senegal,2022,4.855
+Senegal,2023,4.969
+Senegal,2024,4.856
+Serbia,2011,4.564
+Serbia,2012,4.813
+Serbia,2014,5.123
+Serbia,2015,5.177
+Serbia,2016,5.395
+Serbia,2017,5.398
+Serbia,2018,5.603
+Serbia,2019,5.778
+Serbia,2020,6.078
+Serbia,2021,6.178
+Serbia,2022,6.144
+Serbia,2023,6.411
+Serbia,2024,6.606
+Sierra Leone,2011,3.586
+Sierra Leone,2012,4.318
+Sierra Leone,2014,4.507
+Sierra Leone,2015,4.635
+Sierra Leone,2016,4.709
+Sierra Leone,2017,4.571
+Sierra Leone,2018,4.374
+Sierra Leone,2019,3.926
+Sierra Leone,2020,3.849
+Sierra Leone,2021,3.574
+Sierra Leone,2022,3.138
+Sierra Leone,2023,3.245
+Sierra Leone,2024,2.998
+Singapore,2011,6.549
+Singapore,2012,6.546
+Singapore,2014,6.798
+Singapore,2015,6.739
+Singapore,2016,6.572
+Singapore,2017,6.343
+Singapore,2018,6.262
+Singapore,2019,6.377
+Singapore,2020,6.377
+Singapore,2021,6.480
+Singapore,2022,6.587
+Singapore,2023,6.523
+Singapore,2024,6.565
+Slovakia,2011,5.657
+Slovakia,2012,5.969
+Slovakia,2014,5.995
+Slovakia,2015,6.078
+Slovakia,2016,6.098
+Slovakia,2017,6.173
+Slovakia,2018,6.198
+Slovakia,2019,6.281
+Slovakia,2020,6.331
+Slovakia,2021,6.391
+Slovakia,2022,6.469
+Slovakia,2023,6.257
+Slovakia,2024,6.221
+Slovenia,2011,5.922
+Slovenia,2012,6.060
+Slovenia,2014,5.848
+Slovenia,2015,5.768
+Slovenia,2016,5.758
+Slovenia,2017,5.948
+Slovenia,2018,6.118
+Slovenia,2019,6.363
+Slovenia,2020,6.461
+Slovenia,2021,6.630
+Slovenia,2022,6.650
+Slovenia,2023,6.743
+Slovenia,2024,6.792
+Somalia,2015,5.440
+Somalia,2016,5.151
+Somalia,2017,4.982
+Somalia,2018,4.668
+Somalia,2024,4.347
+Somaliland Region,2011,4.691
+Somaliland Region,2012,4.847
+Somaliland Region,2014,5.057
+Somaliland Region,2015,5.057
+South Africa,2011,5.101
+South Africa,2012,4.963
+South Africa,2014,4.642
+South Africa,2015,4.459
+South Africa,2016,4.829
+South Africa,2017,4.724
+South Africa,2018,4.722
+South Africa,2019,4.814
+South Africa,2020,4.956
+South Africa,2021,5.194
+South Africa,2022,5.275
+South Africa,2023,5.422
+South Africa,2024,5.213
+South Korea,2011,5.643
+South Korea,2012,6.267
+South Korea,2014,5.984
+South Korea,2015,5.835
+South Korea,2016,5.838
+South Korea,2017,5.875
+South Korea,2018,5.895
+South Korea,2019,5.872
+South Korea,2020,5.845
+South Korea,2021,5.935
+South Korea,2022,5.951
+South Korea,2023,6.058
+South Korea,2024,6.038
+South Sudan,2015,3.832
+South Sudan,2016,3.591
+South Sudan,2017,3.254
+South Sudan,2018,2.853
+South Sudan,2019,2.817
+Spain,2011,6.761
+Spain,2012,6.322
+Spain,2014,6.329
+Spain,2015,6.361
+Spain,2016,6.403
+Spain,2017,6.310
+Spain,2018,6.354
+Spain,2019,6.401
+Spain,2020,6.491
+Spain,2021,6.476
+Spain,2022,6.436
+Spain,2023,6.421
+Spain,2024,6.466
+Sri Lanka,2011,4.260
+Sri Lanka,2012,4.151
+Sri Lanka,2014,4.271
+Sri Lanka,2015,4.415
+Sri Lanka,2016,4.440
+Sri Lanka,2017,4.471
+Sri Lanka,2018,4.366
+Sri Lanka,2019,4.327
+Sri Lanka,2020,4.325
+Sri Lanka,2021,4.362
+Sri Lanka,2022,4.442
+Sri Lanka,2023,3.898
+Sri Lanka,2024,3.891
+Sudan,2011,4.424
+Sudan,2012,4.401
+Sudan,2014,4.550
+Sudan,2015,4.139
+Sudan,2016,4.139
+Sudan,2017,4.139
+Suriname,2012,6.269
+Suriname,2014,6.269
+Suriname,2015,6.269
+Sweden,2011,7.379
+Sweden,2012,7.480
+Sweden,2014,7.364
+Sweden,2015,7.291
+Sweden,2016,7.284
+Sweden,2017,7.314
+Sweden,2018,7.343
+Sweden,2019,7.353
+Sweden,2020,7.363
+Sweden,2021,7.384
+Sweden,2022,7.395
+Sweden,2023,7.344
+Sweden,2024,7.345
+Switzerland,2011,7.499
+Switzerland,2012,7.650
+Switzerland,2014,7.587
+Switzerland,2015,7.509
+Switzerland,2016,7.494
+Switzerland,2017,7.487
+Switzerland,2018,7.480
+Switzerland,2019,7.560
+Switzerland,2020,7.571
+Switzerland,2021,7.512
+Switzerland,2022,7.240
+Switzerland,2023,7.060
+Switzerland,2024,6.935
+Syria,2011,4.735
+Syria,2012,3.892
+Syria,2014,3.006
+Syria,2015,3.069
+Syria,2016,3.462
+Syria,2017,3.462
+Syria,2018,3.462
+Taiwan,2011,5.988
+Taiwan,2012,6.221
+Taiwan,2014,6.298
+Taiwan,2015,6.379
+Taiwan,2016,6.422
+Taiwan,2017,6.441
+Taiwan,2018,6.446
+Taiwan,2019,6.455
+Taiwan,2020,6.584
+Taiwan,2021,6.512
+Taiwan,2022,6.535
+Taiwan,2023,6.503
+Taiwan,2024,6.669
+Tajikistan,2011,4.614
+Tajikistan,2012,4.380
+Tajikistan,2014,4.786
+Tajikistan,2015,4.996
+Tajikistan,2016,5.041
+Tajikistan,2017,5.352
+Tajikistan,2018,5.467
+Tajikistan,2019,5.556
+Tajikistan,2020,5.466
+Tajikistan,2021,5.377
+Tajikistan,2022,5.330
+Tajikistan,2023,5.281
+Tajikistan,2024,5.411
+Tanzania,2011,3.800
+Tanzania,2012,3.770
+Tanzania,2014,3.781
+Tanzania,2015,3.666
+Tanzania,2016,3.349
+Tanzania,2017,3.303
+Tanzania,2018,3.231
+Tanzania,2019,3.476
+Tanzania,2020,3.623
+Tanzania,2021,3.702
+Tanzania,2022,3.694
+Tanzania,2023,3.781
+Tanzania,2024,3.800
+Thailand,2011,5.804
+Thailand,2012,6.371
+Thailand,2014,6.455
+Thailand,2015,6.474
+Thailand,2016,6.424
+Thailand,2017,6.072
+Thailand,2018,6.008
+Thailand,2019,5.999
+Thailand,2020,5.985
+Thailand,2021,5.891
+Thailand,2022,5.843
+Thailand,2023,5.976
+Thailand,2024,6.222
+Togo,2011,3.007
+Togo,2012,2.936
+Togo,2014,2.839
+Togo,2015,3.303
+Togo,2016,3.495
+Togo,2017,3.999
+Togo,2018,4.085
+Togo,2019,4.187
+Togo,2020,4.107
+Togo,2021,4.112
+Togo,2022,4.137
+Togo,2023,4.214
+Togo,2024,4.315
+Trinidad and Tobago,2011,6.263
+Trinidad and Tobago,2012,6.519
+Trinidad and Tobago,2014,6.168
+Trinidad and Tobago,2015,6.168
+Trinidad and Tobago,2016,6.168
+Trinidad and Tobago,2017,6.192
+Trinidad and Tobago,2018,6.192
+Trinidad and Tobago,2019,6.192
+Trinidad and Tobago,2024,5.905
+Tunisia,2011,5.141
+Tunisia,2012,4.826
+Tunisia,2014,4.739
+Tunisia,2015,5.045
+Tunisia,2016,4.805
+Tunisia,2017,4.592
+Tunisia,2018,4.461
+Tunisia,2019,4.392
+Tunisia,2020,4.596
+Tunisia,2021,4.516
+Tunisia,2022,4.497
+Tunisia,2023,4.422
+Tunisia,2024,4.552
+Turkmenistan,2011,6.568
+Turkmenistan,2012,5.628
+Turkmenistan,2014,5.548
+Turkmenistan,2015,5.658
+Turkmenistan,2016,5.822
+Turkmenistan,2017,5.636
+Turkmenistan,2018,5.247
+Turkmenistan,2019,5.119
+Turkmenistan,2020,5.066
+Turkmenistan,2021,5.474
+Türkiye,2011,5.234
+Türkiye,2012,5.345
+Türkiye,2014,5.332
+Türkiye,2015,5.389
+Türkiye,2016,5.500
+Türkiye,2017,5.483
+Türkiye,2018,5.373
+Türkiye,2019,5.132
+Türkiye,2020,4.948
+Türkiye,2021,4.744
+Türkiye,2022,4.614
+Türkiye,2023,4.975
+Türkiye,2024,5.262
+Uganda,2011,4.313
+Uganda,2012,4.443
+Uganda,2014,3.931
+Uganda,2015,3.739
+Uganda,2016,4.081
+Uganda,2017,4.161
+Uganda,2018,4.189
+Uganda,2019,4.432
+Uganda,2020,4.636
+Uganda,2021,4.603
+Uganda,2022,4.432
+Uganda,2023,4.372
+Uganda,2024,4.461
+Ukraine,2011,5.089
+Ukraine,2012,5.057
+Ukraine,2014,4.681
+Ukraine,2015,4.324
+Ukraine,2016,4.096
+Ukraine,2017,4.103
+Ukraine,2018,4.332
+Ukraine,2019,4.561
+Ukraine,2020,4.875
+Ukraine,2021,5.084
+Ukraine,2022,5.071
+Ukraine,2023,4.873
+Ukraine,2024,4.680
+United Arab Emirates,2011,6.977
+United Arab Emirates,2012,7.144
+United Arab Emirates,2014,6.901
+United Arab Emirates,2015,6.573
+United Arab Emirates,2016,6.648
+United Arab Emirates,2017,6.774
+United Arab Emirates,2018,6.825
+United Arab Emirates,2019,6.791
+United Arab Emirates,2020,6.561
+United Arab Emirates,2021,6.576
+United Arab Emirates,2022,6.571
+United Arab Emirates,2023,6.733
+United Arab Emirates,2024,6.759
+United Kingdom,2011,6.936
+United Kingdom,2012,6.883
+United Kingdom,2014,6.867
+United Kingdom,2015,6.725
+United Kingdom,2016,6.714
+United Kingdom,2017,6.814
+United Kingdom,2018,7.054
+United Kingdom,2019,7.165
+United Kingdom,2020,7.064
+United Kingdom,2021,6.943
+United Kingdom,2022,6.796
+United Kingdom,2023,6.749
+United Kingdom,2024,6.728
+United States,2011,7.270
+United States,2012,7.082
+United States,2014,7.119
+United States,2015,7.104
+United States,2016,6.993
+United States,2017,6.886
+United States,2018,6.892
+United States,2019,6.940
+United States,2020,6.951
+United States,2021,6.977
+United States,2022,6.894
+United States,2023,6.725
+United States,2024,6.724
+Uruguay,2011,5.898
+Uruguay,2012,6.355
+Uruguay,2014,6.485
+Uruguay,2015,6.545
+Uruguay,2016,6.454
+Uruguay,2017,6.379
+Uruguay,2018,6.293
+Uruguay,2019,6.440
+Uruguay,2020,6.431
+Uruguay,2021,6.474
+Uruguay,2022,6.494
+Uruguay,2023,6.611
+Uruguay,2024,6.661
+Uzbekistan,2011,5.225
+Uzbekistan,2012,5.623
+Uzbekistan,2014,6.003
+Uzbekistan,2015,5.987
+Uzbekistan,2016,5.971
+Uzbekistan,2017,6.096
+Uzbekistan,2018,6.174
+Uzbekistan,2019,6.258
+Uzbekistan,2020,6.179
+Uzbekistan,2021,6.063
+Uzbekistan,2022,6.014
+Uzbekistan,2023,6.195
+Uzbekistan,2024,6.193
+Venezuela,2011,6.922
+Venezuela,2012,7.039
+Venezuela,2014,6.810
+Venezuela,2015,6.084
+Venezuela,2016,5.250
+Venezuela,2017,4.806
+Venezuela,2018,4.707
+Venezuela,2019,5.053
+Venezuela,2020,4.892
+Venezuela,2021,4.925
+Venezuela,2022,5.211
+Venezuela,2023,5.607
+Venezuela,2024,5.683
+Vietnam,2011,5.425
+Vietnam,2012,5.533
+Vietnam,2014,5.360
+Vietnam,2015,5.061
+Vietnam,2016,5.074
+Vietnam,2017,5.103
+Vietnam,2018,5.175
+Vietnam,2019,5.353
+Vietnam,2020,5.411
+Vietnam,2021,5.485
+Vietnam,2022,5.763
+Vietnam,2023,6.043
+Vietnam,2024,6.352
+Yemen,2011,4.454
+Yemen,2012,4.054
+Yemen,2014,4.077
+Yemen,2015,3.724
+Yemen,2016,3.593
+Yemen,2017,3.355
+Yemen,2018,3.380
+Yemen,2019,3.527
+Yemen,2020,3.658
+Yemen,2021,4.197
+Yemen,2023,3.561
+Yemen,2024,3.561
+Zambia,2011,4.705
+Zambia,2012,5.006
+Zambia,2014,5.129
+Zambia,2015,4.795
+Zambia,2016,4.514
+Zambia,2017,4.377
+Zambia,2018,4.107
+Zambia,2019,3.759
+Zambia,2020,4.073
+Zambia,2021,3.760
+Zambia,2022,3.982
+Zambia,2023,3.502
+Zambia,2024,3.912
+Zimbabwe,2011,3.978
+Zimbabwe,2012,4.827
+Zimbabwe,2014,4.610
+Zimbabwe,2015,4.193
+Zimbabwe,2016,3.875
+Zimbabwe,2017,3.692
+Zimbabwe,2018,3.663
+Zimbabwe,2019,3.299
+Zimbabwe,2020,3.145
+Zimbabwe,2021,2.995
+Zimbabwe,2022,3.204
+Zimbabwe,2023,3.341
+Zimbabwe,2024,3.396
