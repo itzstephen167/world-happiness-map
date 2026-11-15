@@ -8,7 +8,7 @@ Small, self-contained improvements, done one at a time.
 - [x] 4. Colour-blind-friendly palette toggle
 - [x] 5. Show the regional average in the country detail card
 - [x] 6. Compare two countries side by side
-- [ ] 7. "Biggest movers" list (needs more than one year of data)
+- [x] 7. "Biggest movers" list (needs more than one year of data)
 - [ ] 8. Year slider (needs more than one year of data)
 
 ## Pages and interactive features

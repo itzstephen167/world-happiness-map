@@ -7,6 +7,35 @@ loadHappiness().then(({ rows, ranked, rank, regions }) => {
   fillList("#top", ranked.slice(0, 10));
   fillList("#bottom", ranked.slice(-10).reverse());
 
+  // Biggest movers: change in score between an earlier year and the latest one, for countries scored in both
+  d3.csv("data/happiness_history.csv", d => ({ country: d.country, year: +d.year, score: +d.score })).then(history => {
+    const byYear = d3.rollup(history, v => new Map(v.map(d => [d.country, d.score])), d => d.year);
+    const years = [...byYear.keys()].sort(d3.ascending);
+    const latest = years[years.length - 1], now = byYear.get(latest);
+    const signed = v => `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(2)}`;
+
+    const fromSel = d3.select("#moversFrom");
+    fromSel.selectAll("option").data(years.slice(0, -1)).join("option").attr("value", d => d).text(d => d);
+
+    function fillMovers(sel, data) {
+      d3.select(sel).selectAll("li").data(data, d => d.country).join("li").html("").append("a")
+        .attr("href", d => `index.html?c=${encodeURIComponent(d.country)}`)
+        .html((d, i) => `<span class="rank">${i + 1}</span><span>${d.country}<small class="muted">${d.from.toFixed(2)} → ${d.to.toFixed(2)}</small></span><span class="score">${signed(d.change)}</span>`);
+      d3.select(sel).selectAll("li").order();
+    }
+    function drawMovers() {
+      const year = +fromSel.property("value"), then = byYear.get(year);
+      const moved = [...now].filter(([c]) => then.has(c) && rank.has(c))
+        .map(([country, to]) => ({ country, from: then.get(country), to, change: to - then.get(country) }))
+        .sort((a, b) => b.change - a.change);
+      fillMovers("#risers", moved.filter(d => d.change > 0).slice(0, 10));
+      fillMovers("#fallers", moved.filter(d => d.change < 0).reverse().slice(0, 10));
+      d3.select("#moversNote").text(`Change in score from ${year} to ${latest}, for the ${moved.length} countries scored in both years. Each year's score is the report's three-year average ending in that year.`);
+    }
+    fromSel.on("change", drawMovers);
+    drawMovers();
+  }).catch(err => d3.select("#moversNote").text(`Couldn't load the score history: ${err.message}.`));
+
   // Full table: sort by any column, filter by name and region
   const table = rows.map(d => ({ ...d, rank: rank.get(d.country), diff: d.score - regions.get(d.region).avg }));
   const firstDir = { rank: 1, country: 1, region: 1, score: -1, diff: -1 };
