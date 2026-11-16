@@ -9,7 +9,7 @@ Small, self-contained improvements, done one at a time.
 - [x] 5. Show the regional average in the country detail card
 - [x] 6. Compare two countries side by side
 - [x] 7. "Biggest movers" list (needs more than one year of data)
-- [ ] 8. Year slider (needs more than one year of data)
+- [x] 8. Year slider (needs more than one year of data)
 
 ## Pages and interactive features
 

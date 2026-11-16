@@ -33,8 +33,11 @@ Promise.all([
   const [lo, hi] = d3.extent(rows, d => d.score);
   // Offset so the lightest country is still visibly blue, not white.
   const blues = t => d3.interpolateBlues(0.15 + 0.85 * t);
-  const color = d3.scaleSequential(blues).domain([lo, hi]);
-  const fill = name => happiness.has(name) ? color(happiness.get(name)) : "var(--nodata)";
+  // The scale stays fixed on the latest year so colours compare across years; clamp covers the few scores outside it.
+  const color = d3.scaleSequential(blues).domain([lo, hi]).clamp(true);
+  // The scores the map is showing: the latest year, or an earlier one picked with the year slider.
+  let shown = happiness;
+  const fill = name => shown.has(name) ? color(shown.get(name)) : "var(--nodata)";
 
   let selected = null;
 
@@ -45,7 +48,7 @@ Promise.all([
       .attr("d", path)
       .attr("fill", d => fill(d.properties.name))
       .on("mousemove", (e, d) => {
-        const v = happiness.get(d.properties.name);
+        const v = shown.get(d.properties.name);
         tip.style("opacity", 1)
            .style("left", e.clientX + 12 + "px").style("top", e.clientY + 12 + "px")
            .text(`${d.properties.name}: ${v != null ? v.toFixed(2) : "no data"}`);
@@ -184,16 +187,37 @@ Promise.all([
     const [bLo, bHi] = band ? band.split("-").map(Number) : [-Infinity, Infinity];
     // Upper bound is exclusive except for the top band, so every score lands in exactly one band.
     const top = bHi === bands[0][1];
-    const match = name => happiness.has(name) && (!region || regionOf.get(name) === region) &&
-      happiness.get(name) >= bLo && (happiness.get(name) < bHi || (top && happiness.get(name) <= bHi));
+    // Scores below the lowest band (possible in earlier years) count towards it, and likewise at the top.
+    const low = bLo === bands[bands.length - 1][0];
+    const match = name => shown.has(name) && (!region || regionOf.get(name) === region) &&
+      (shown.get(name) >= bLo || low) && (shown.get(name) < bHi || top);
     const active = !!(region || band);
     paths.classed("dim", d => active && !match(d.properties.name));
-    const n = rows.filter(d => match(d.country)).length;
-    d3.select("#fCount").text(active ? `${n} of ${rows.length} countries highlighted` : "");
+    const n = [...shown.keys()].filter(match).length;
+    d3.select("#fCount").text(active ? `${n} of ${shown.size} countries highlighted` : "");
     d3.select("#fClear").property("hidden", !active);
   }
   d3.selectAll("#fRegion, #fBand").on("change", applyFilters);
   d3.select("#fClear").on("click", () => { d3.selectAll("#fRegion, #fBand").property("value", ""); applyFilters(); });
+
+  // Year slider: recolour the map with an earlier year's scores. The cards and the detail panel stay on the latest year.
+  d3.csv("data/happiness_history.csv", d => ({ country: d.country, year: +d.year, score: +d.score })).then(history => {
+    const byYear = d3.rollup(history, v => new Map(v.map(d => [d.country, d.score])), d => d.year);
+    // The report skipped 2013, so the slider steps through the years that exist rather than a number range.
+    const years = [...byYear.keys()].sort(d3.ascending), latest = years[years.length - 1];
+    const slider = d3.select("#year").attr("max", years.length - 1).property("value", years.length - 1).property("disabled", false);
+    function setYear(i) {
+      const y = years[i];
+      shown = y === latest ? happiness : byYear.get(y);
+      paths.attr("fill", d => fill(d.properties.name));
+      d3.select("#yearLabel").text(y);
+      slider.attr("aria-valuetext", y);
+      d3.select("#yearNote").text(y === latest ? "" : `Map shows ${y} scores for ${shown.size} countries. The cards and details stay on ${latest}.`);
+      applyFilters();
+    }
+    slider.on("input", function () { setYear(+this.value); });
+    setYear(years.length - 1);
+  }).catch(err => d3.select("#yearNote").text(`Couldn't load the score history: ${err.message}.`));
 
   // Arriving from a ranking or a shared link: index.html?c=Finland opens that country.
   const linked = new URLSearchParams(location.search).get("c");

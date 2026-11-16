@@ -114,6 +114,11 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 /* map filters: non-matching countries fade back */
 .map-filters { margin: 0 0 8px; }
 .map-filters .btn { flex: none; }
+/* year slider under the map filters */
+.year-row { display: flex; align-items: center; gap: 14px; margin: 0 0 8px; }
+.year-row label { font-weight: 500; white-space: nowrap; }
+.year-row label b { color: var(--purple-ink); font-variant-numeric: tabular-nums; }
+.year-row input { flex: 1; min-width: 0; accent-color: var(--purple); cursor: pointer; }
 .country { transition: opacity .2s; }
 .country.dim { opacity: .18; }
 .legend text { fill: var(--muted); font: 11px var(--sans); }

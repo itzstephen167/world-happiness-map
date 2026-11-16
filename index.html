@@ -72,6 +72,11 @@
           <select id="fBand" aria-label="Highlight a score range"></select>
           <button class="btn soft" id="fClear" hidden>Clear filters</button>
         </div>
+        <div class="year-row">
+          <label for="year">Year <b id="yearLabel">–</b></label>
+          <input type="range" id="year" min="0" max="0" step="1" value="0" disabled>
+        </div>
+        <p class="muted table-count" id="yearNote" aria-live="polite"></p>
         <p class="muted table-count" id="fCount" aria-live="polite"></p>
         <div class="map-frame">
           <svg id="map" viewBox="0 0 960 520" role="img" tabindex="0" aria-label="World map colored by happiness score" aria-describedby="legend-note"></svg>
