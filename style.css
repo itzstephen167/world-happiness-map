@@ -7,7 +7,7 @@
   --lift: 0 1px 2px rgba(16, 24, 40, .06), 0 4px 14px rgba(16, 24, 40, .08);
   --radius: 24px;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --display: "Poppins", var(--sans);
+  --display: "Fraunces", Georgia, serif;
   --badge-bg: #fbf2c0; --badge-ink: #6b5600; --green-bg: #d8f5e6; --green-ink: #0b6b3f; --purple-ink: #4a2fc9; --soft-hover: #e3dcff;
   color-scheme: light;
 }
@@ -95,7 +95,7 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 .stats .k { font-size: .82rem; color: var(--muted); }
 .stats .v { font: 600 1.9rem/1.2 var(--display); margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
 .stats .u { font-size: .85rem; color: var(--muted); }
-.highlight { background: var(--gradient); color: #fff; }
+.highlight { background: linear-gradient(100deg, rgba(18,16,40,.82) 0%, rgba(40,28,80,.45) 100%), url(img/earth.webp) 30% center / cover, var(--dark); color: #fff; }
 .highlight .k, .highlight .u { color: rgba(255,255,255,.9); }
 @media (max-width: 1000px) { .stats { grid-template-columns: 1fr 1fr; } }
 
