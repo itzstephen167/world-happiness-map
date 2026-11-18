@@ -229,3 +229,40 @@ footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line);
 
 #tip { position: fixed; pointer-events: none; background: var(--dark); color: #fff; padding: 7px 11px; border-radius: 10px; font-size: 13px; opacity: 0; z-index: 30; box-shadow: var(--lift); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Printing: a light page with the data and none of the controls. */
+@media print {
+  :root {
+    --canvas: #fff; --card: #fff; --ink: #262a35; --muted: #5f6472; --line: #e2e4ea; --surface: #f7f8fa;
+    --dark: #1f2433; --purple-soft: #efebff; --accent: #08519c; --nodata: #dfe2e8; --stroke: #fff;
+    --shadow: none; --lift: none;
+    --badge-bg: #fbf2c0; --badge-ink: #6b5600; --green-bg: #d8f5e6; --green-ink: #0b6b3f; --purple-ink: #4a2fc9;
+    color-scheme: light;
+  }
+  @page { margin: 14mm; }
+  /* Keep map colours, bars and badges, which browsers drop from print by default. */
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-size: 11pt; }
+
+  /* Navigation and controls do nothing on paper. */
+  .rail, #tip, .btn, .icon-btn, .controls, .search, .country-pick, .country-actions, #legend-note,
+  input[type=range], .game-pick { display: none !important; }
+  /* Pickers print as plain text showing their current choice. */
+  select { appearance: none; -webkit-appearance: none; box-shadow: none !important; border: 1px solid var(--line) !important; background: none !important; }
+
+  main { margin: 0; padding: 0; max-width: none; }
+  .page-head { margin-bottom: 16px; }
+  .card { border: 1px solid var(--line); padding: 18px 20px; border-radius: 14px; }
+  .stats, .layout, .pair { gap: 14px; }
+  .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  main > section + section { margin-top: 16px; }
+  .card, .stat, .cmp-side, .rank-list li, .rank-table tr { break-inside: avoid; }
+  h1, h2, h3, .card-head { break-after: avoid; }
+
+  /* Long lists and the full table print in full, with the table header repeated on each page. */
+  .table-wrap, .rank-list.scroll { max-height: none; overflow: visible; }
+  .rank-table thead th { position: static; }
+  .rank-table thead { display: table-header-group; }
+  .map-frame { background: none; }
+  footer { margin-top: 18px; }
+}
