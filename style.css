@@ -146,6 +146,13 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 #cmpGap { margin-top: 14px; }
 #detail .btn { margin-top: 16px; }
 
+/* 404 page */
+.nf-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.nf-list a { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; padding: 14px 16px; border-radius: 14px; background: var(--surface); color: var(--ink); text-decoration: none; height: 100%; }
+.nf-list a:hover { background: var(--purple-soft); }
+.nf-name { font: 500 1.05rem var(--display); }
+.nf-desc { grid-column: 1 / -1; font-size: .88rem; color: var(--muted); }
+
 /* country page */
 .country-pick { font: inherit; color: var(--ink); background: var(--card); border: 0; border-radius: 14px; padding: 11px 14px; box-shadow: var(--lift); cursor: pointer; width: min(340px, 100%); }
 .country-pick:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: 2px; }

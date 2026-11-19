@@ -31,7 +31,7 @@ None of these need outside data. Keep the "Approximate" label on the scores unti
 - [x] 17. Export the rankings table (with the current filter and sort) as CSV
 - [x] 18. Open Graph / Twitter meta tags so shared links preview nicely
 - [x] 19. Print styles: map, tables and country pages print cleanly, with the side rail hidden
-- [ ] 20. Custom 404 page with links back to each page
+- [x] 20. Custom 404 page with links back to each page
 - [ ] 21. Score distribution chart on the rankings page: a histogram of all countries, with the selected country marked
 - [ ] 22. "Random country" button in the side rail
 - [ ] 23. Game: add a "guess the score" round and remember the best streak between visits
