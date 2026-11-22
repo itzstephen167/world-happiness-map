@@ -7,6 +7,44 @@ loadHappiness().then(({ rows, ranked, rank, regions }) => {
   fillList("#top", ranked.slice(0, 10));
   fillList("#bottom", ranked.slice(-10).reverse());
 
+  // Score distribution: how many countries fall in each half-point band, with one country marked
+  const DW = 720, DH = 230, M = { t: 16, r: 12, b: 34, l: 34 };
+  const x = d3.scaleLinear().domain([Math.floor(d3.min(rows, d => d.score)), Math.ceil(d3.max(rows, d => d.score))]).range([M.l, DW - M.r]);
+  const bins = d3.bin().domain(x.domain()).thresholds(d3.range(x.domain()[0], x.domain()[1], 0.5))(rows.map(d => d.score));
+  const y = d3.scaleLinear().domain([0, d3.max(bins, b => b.length)]).nice().range([DH - M.b, M.t]);
+  const dist = d3.select("#dist");
+  dist.append("g").attr("class", "dist-axis").attr("transform", `translate(0,${DH - M.b})`)
+    .call(d3.axisBottom(x).ticks(x.domain()[1] - x.domain()[0]).tickSizeOuter(0));
+  dist.append("g").attr("class", "dist-axis").attr("transform", `translate(${M.l},0)`)
+    .call(d3.axisLeft(y).ticks(4).tickSize(-(DW - M.l - M.r))).call(g => g.select(".domain").remove());
+  dist.append("text").attr("class", "dist-label").attr("x", DW - M.r).attr("y", DH - 4).attr("text-anchor", "end").text("Happiness score");
+  const bars = dist.append("g").selectAll("rect").data(bins).join("rect")
+    .attr("class", "dist-bar").attr("x", b => x(b.x0) + 1).attr("width", b => Math.max(0, x(b.x1) - x(b.x0) - 2))
+    .attr("y", b => y(b.length)).attr("height", b => y(0) - y(b.length)).attr("rx", 3);
+  bars.append("title").text(b => `${b.x0.toFixed(1)}–${b.x1.toFixed(1)}: ${b.length} ${b.length === 1 ? "country" : "countries"}`);
+  const mark = dist.append("g").attr("class", "dist-mark").style("display", "none");
+  mark.append("line").attr("y1", M.t - 6).attr("y2", DH - M.b);
+  const markText = mark.append("text").attr("y", M.t - 6);
+
+  const distPick = d3.select("#distPick");
+  distPick.selectAll("option").data(["", ...ranked.map(d => d.country).sort()]).join("option")
+    .attr("value", d => d).text(d => d || "Mark a country…");
+  function drawMark() {
+    const name = distPick.property("value"), d = rows.find(r => r.country === name);
+    const bin = d && bins.find(b => d.score >= b.x0 && (d.score < b.x1 || b === bins[bins.length - 1]));
+    bars.classed("on", b => b === bin);
+    mark.style("display", d ? null : "none");
+    const peak = bins[d3.maxIndex(bins, b => b.length)];
+    const total = `${rows.length} countries in half-point bands. The most common band is ${peak.x0.toFixed(1)}–${peak.x1.toFixed(1)}, with ${peak.length} countries.`;
+    if (!d) { d3.select("#distDesc").text(total); return; }
+    const px = x(d.score), right = px > DW - 140;
+    mark.attr("transform", `translate(${px},0)`);
+    markText.attr("x", right ? -6 : 6).attr("text-anchor", right ? "end" : "start").text(`${d.country} ${d.score.toFixed(2)}`);
+    d3.select("#distDesc").text(`${total} ${d.country} scores ${d.score.toFixed(2)}, ranked ${rank.get(d.country)} of ${rows.length}, in the ${bin.x0.toFixed(1)}–${bin.x1.toFixed(1)} band${bin.length === 1 ? ", on its own" : ` with ${bin.length - 1} other ${bin.length === 2 ? "country" : "countries"}`}.`);
+  }
+  distPick.on("change", drawMark);
+  drawMark();
+
   // Biggest movers: change in score between an earlier year and the latest one, for countries scored in both
   d3.csv("data/happiness_history.csv", d => ({ country: d.country, year: +d.year, score: +d.score })).then(history => {
     const byYear = d3.rollup(history, v => new Map(v.map(d => [d.country, d.score])), d => d.year);

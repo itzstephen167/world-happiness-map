@@ -146,6 +146,20 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 #cmpGap { margin-top: 14px; }
 #detail .btn { margin-top: 16px; }
 
+/* score distribution */
+.dist { width: 100%; height: auto; display: block; overflow: visible; }
+.dist-pick { flex: 0 1 260px; }
+.dist-bar { fill: var(--accent); opacity: .55; transition: opacity .15s; }
+.dist-bar:hover { opacity: .8; }
+.dist-bar.on { opacity: 1; fill: var(--purple); }
+.dist-axis text, .dist-label { fill: var(--muted); font: 12px var(--sans); }
+.dist-axis line { stroke: var(--line); }
+.dist-axis .domain { stroke: var(--line); }
+.dist-mark line { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.dist-mark text { fill: var(--ink); font: 600 12px var(--sans); }
+/* The chart scales down on phones, so its text is drawn larger to stay readable. */
+@media (max-width: 640px) { .dist-axis text, .dist-mark text { font-size: 22px; } .dist-label { display: none; } }
+
 /* 404 page */
 .nf-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 .nf-list a { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; padding: 14px 16px; border-radius: 14px; background: var(--surface); color: var(--ink); text-decoration: none; height: 100%; }
