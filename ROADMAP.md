@@ -33,6 +33,6 @@ None of these need outside data. Keep the "Approximate" label on the scores unti
 - [x] 19. Print styles: map, tables and country pages print cleanly, with the side rail hidden
 - [x] 20. Custom 404 page with links back to each page
 - [x] 21. Score distribution chart on the rankings page: a histogram of all countries, with the selected country marked
-- [ ] 22. "Random country" button in the side rail
+- [x] 22. "Random country" button in the side rail
 - [ ] 23. Game: add a "guess the score" round and remember the best streak between visits
 - [ ] 24. Accessibility: data-table fallback for the map and charts, check focus order and contrast

@@ -1,7 +1,12 @@
 // One country's page: country.html?c=Finland
 loadHappiness().then(({ rows, ranked, happiness, regionOf, regions, rank }) => {
-  const name = new URLSearchParams(location.search).get("c");
+  let name = new URLSearchParams(location.search).get("c");
   const url = c => `country.html?c=${encodeURIComponent(c)}`;
+  // The rail's "Random country" link lands here as ?c=random; swap in a real name so the address can be shared.
+  if (name === "random") {
+    name = ranked[Math.floor(Math.random() * ranked.length)].country;
+    history.replaceState(null, "", url(name));
+  }
 
   const pick = d3.select("#cPick");
   pick.selectAll("option").data(["", ...ranked.map(d => d.country).sort()]).join("option")
