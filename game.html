@@ -51,17 +51,31 @@
   <div class="page-head">
     <div>
       <h1>Which scores higher?</h1>
-      <p class="sub">Two countries, one guess. Pick the one with the higher happiness score.</p>
+      <p class="sub" id="gameSub">Two countries, one guess. Pick the one with the higher happiness score.</p>
     </div>
   </div>
 
   <section id="game" class="layout">
     <div class="card">
-      <div class="card-head"><h2 id="gameRound">Round 1</h2><span class="badge purple">WHR 2025</span></div>
+      <div class="card-head">
+        <h2 id="gameRound">Round 1</h2>
+        <div class="seg" role="radiogroup" aria-label="Game mode" id="gameMode">
+          <button role="radio" data-m="higher">Which is higher?</button>
+          <button role="radio" data-m="score">Guess the score</button>
+        </div>
+      </div>
       <div class="game-pair" id="gamePair">
         <button class="game-pick" data-side="0"><span class="game-name"></span><span class="muted game-region"></span><span class="game-score" aria-hidden="true"></span></button>
         <span class="game-vs" aria-hidden="true">vs</span>
         <button class="game-pick" data-side="1"><span class="game-name"></span><span class="muted game-region"></span><span class="game-score" aria-hidden="true"></span></button>
+      </div>
+      <div class="game-solo" id="gameSolo" hidden>
+        <div class="game-card"><span class="game-name" id="soloName"></span><span class="muted game-region" id="soloRegion"></span><span class="game-score" id="soloScore">?</span></div>
+        <div class="game-guess">
+          <label for="soloRange">Your guess <output id="soloOut">5.0</output></label>
+          <input type="range" id="soloRange" min="0" max="10" step="0.1" value="5">
+          <button class="btn soft" id="soloGo">Guess</button>
+        </div>
       </div>
       <p class="game-result" id="gameResult" aria-live="polite"></p>
       <div class="controls"><button class="btn soft" id="gameNext" hidden>Next pair →</button></div>
@@ -75,7 +89,8 @@
         <div><dt>Best streak</dt><dd id="gameBest">0</dd></div>
       </dl>
       <button class="btn soft" id="gameReset">Start over</button>
-      <p class="note">Pairs never tie. Scores come from the same dataset as the map.</p>
+      <p class="note" id="gameNote">Pairs never tie. Scores come from the same dataset as the map.</p>
+      <p class="note">Your best streak in each mode is kept on this device.</p>
     </div>
   </section>
 

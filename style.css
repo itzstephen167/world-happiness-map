@@ -209,6 +209,18 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 .game-stats dt { font-size: .82rem; color: var(--muted); }
 .game-stats dd { margin: 2px 0 0; font: 600 1.4rem/1.2 var(--display); font-variant-numeric: tabular-nums; }
 @media (max-width: 600px) { .game-pair { grid-template-columns: 1fr; } .game-vs { justify-self: center; } }
+.game-pair[hidden], .game-solo[hidden] { display: none; }
+.btn[hidden] { display: none; }
+.seg { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 14px; background: var(--surface); }
+.seg button { font: 500 .85rem var(--sans); padding: 7px 12px; border-radius: 10px; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
+.seg button:hover { background: var(--card); }
+.seg button.on { background: var(--dark); color: #fff; }
+.game-solo { display: grid; gap: 14px; margin: 6px 0 16px; }
+.game-card { display: flex; flex-direction: column; gap: 4px; background: var(--surface); border-radius: 16px; padding: 18px 20px; }
+.game-guess { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.game-guess label { font-weight: 500; font-size: .92rem; }
+.game-guess output { font: 600 1.1rem var(--display); font-variant-numeric: tabular-nums; margin-left: 6px; }
+.game-guess input { flex: 1 1 200px; accent-color: var(--purple); }
 
 /* full rankings table */
 .filters { display: flex; gap: 12px; flex-wrap: wrap; margin: 4px 0 12px; }
