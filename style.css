@@ -1,5 +1,5 @@
 :root {
-  --canvas: #f3f4f7; --card: #fff; --ink: #262a35; --muted: #7a7f8c; --line: #eceef3; --surface: #f7f8fa;
+  --canvas: #f3f4f7; --card: #fff; --ink: #262a35; --muted: #6b707d; --line: #eceef3; --surface: #f7f8fa;
   --dark: #1f2433; --purple: #6a4cf5; --purple-dark: #5537e6; --purple-soft: #efebff;
   --accent: #08519c; --nodata: #dfe2e8; --stroke: #fff; --selected: #f59e0b;
   --gradient: linear-gradient(135deg, #5fb784 0%, #6f97a6 45%, #8a4fe5 100%);
@@ -9,6 +9,8 @@
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --display: "Fraunces", Georgia, serif;
   --badge-bg: #fbf2c0; --badge-ink: #6b5600; --green-bg: #d8f5e6; --green-ink: #0b6b3f; --purple-ink: #4a2fc9; --soft-hover: #e3dcff;
+  /* Solid focus ring: at least 3:1 against every background it sits on. */
+  --focus: #6a4cf5;
   color-scheme: light;
 }
 /* Dark mode follows the system setting. */
@@ -18,7 +20,7 @@
     --dark: #323a4f; --purple-soft: #2c2650; --accent: #6baed6; --nodata: #3a4050; --stroke: #1c202b;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 24px rgba(0, 0, 0, .25);
     --lift: 0 1px 2px rgba(0, 0, 0, .35), 0 4px 14px rgba(0, 0, 0, .3);
-    --badge-bg: #3d3514; --badge-ink: #f3d86b; --green-bg: #133a29; --green-ink: #7fd9a8; --purple-ink: #c2b4ff; --soft-hover: #383063;
+    --badge-bg: #3d3514; --badge-ink: #f3d86b; --green-bg: #133a29; --green-ink: #7fd9a8; --purple-ink: #c2b4ff; --soft-hover: #383063; --focus: #a996ff;
     color-scheme: dark;
   }
 }
@@ -79,7 +81,7 @@ h1 { font-size: clamp(1.5rem, 3vw, 1.9rem); }
 button { font: inherit; cursor: pointer; }
 .btn { display: inline-flex; align-items: center; font-weight: 500; font-size: .9rem; padding: 10px 16px; border-radius: 12px; border: 0; }
 a.btn, .rank-list a { text-decoration: none; }
-.btn.soft { background: var(--purple-soft); color: var(--purple); }
+.btn.soft { background: var(--purple-soft); color: var(--purple-ink); }
 .btn.soft:hover { background: var(--soft-hover); }
 .btn.soft[aria-pressed="true"] { background: var(--purple); color: #fff; }
 .btn:disabled { opacity: .5; cursor: not-allowed; }
@@ -87,7 +89,19 @@ a.btn, .rank-list a { text-decoration: none; }
 .icon-btn:hover { background: var(--surface); }
 .icon-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
 .controls { display: flex; gap: 10px; }
-button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: 2px; }
+button:focus-visible, input:focus-visible, summary:focus-visible, main a:focus-visible, .rail a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* Skip link: first thing a keyboard user reaches, hidden until focused. */
+.skip { position: absolute; left: 12px; top: -60px; z-index: 40; background: var(--dark); color: #fff; padding: 10px 16px; border-radius: 12px; font-weight: 500; text-decoration: none; }
+.skip:focus { top: 12px; outline: 3px solid var(--focus); outline-offset: 2px; }
+main:focus { outline: none; } /* focused only as the skip link's target */
+
+/* Data-table fallback under the map and charts, collapsed by default */
+.data-table { margin-top: 12px; }
+.data-table summary { cursor: pointer; font-size: .88rem; font-weight: 500; color: var(--purple-ink); width: fit-content; border-radius: 6px; }
+.data-table .table-wrap { margin-top: 10px; max-height: 360px; }
+.data-table caption { text-align: left; font-size: .82rem; color: var(--muted); padding: 10px 14px 0; }
+.data-table th { color: var(--muted); font-size: .8rem; font-weight: 600; padding: 10px 14px; }
 
 /* stats */
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin-bottom: 28px; }
@@ -105,7 +119,7 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 .map-frame { background: var(--surface); border-radius: 16px; overflow: hidden; }
 #map { width: 100%; height: auto; display: block; cursor: grab; }
 #map:active { cursor: grabbing; }
-#map:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: -3px; }
+#map:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
 .country { stroke: var(--stroke); stroke-width: .4; cursor: pointer; vector-effect: non-scaling-stroke; }
 .country:hover { stroke: var(--ink); stroke-width: 1.2; }
 .country.selected { stroke: var(--selected); stroke-width: 2.2; }
@@ -135,7 +149,7 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 /* compare */
 .cmp-pick { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 14px 0 18px; }
 .cmp-pick select { flex: 1 1 200px; font: inherit; color: var(--ink); background: var(--card); border: 0; border-radius: 14px; padding: 11px 14px; box-shadow: var(--lift); cursor: pointer; }
-.cmp-pick select:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: 2px; }
+.cmp-pick select:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .cmp { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 @media (max-width: 600px) { .cmp { grid-template-columns: 1fr; } }
 .cmp-side { background: var(--surface); border-radius: 16px; padding: 18px 20px; }
@@ -169,7 +183,7 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 
 /* country page */
 .country-pick { font: inherit; color: var(--ink); background: var(--card); border: 0; border-radius: 14px; padding: 11px 14px; box-shadow: var(--lift); cursor: pointer; width: min(340px, 100%); }
-.country-pick:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: 2px; }
+.country-pick:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .country-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
 .rank-list li.current a { background: var(--purple-soft); }
 .rank-list li.current .rank { background: var(--purple); }
@@ -226,7 +240,7 @@ button:focus-visible, input:focus-visible, main a:focus-visible, .rail a:focus-v
 .filters { display: flex; gap: 12px; flex-wrap: wrap; margin: 4px 0 12px; }
 .filters .search { flex: 1 1 240px; width: auto; }
 .filters select { flex: 1 1 200px; min-width: 0; font: inherit; color: var(--ink); background: var(--card); border: 0; border-radius: 14px; padding: 11px 14px; box-shadow: var(--lift); cursor: pointer; }
-.filters select:focus-visible { outline: 3px solid rgba(106,76,245,.35); outline-offset: 2px; }
+.filters select:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .table-count { font-size: .85rem; margin-bottom: 10px; }
 .table-wrap { max-height: 620px; overflow: auto; border-radius: 16px; background: var(--surface); }
 .rank-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
@@ -278,7 +292,7 @@ footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line);
   body { font-size: 11pt; }
 
   /* Navigation and controls do nothing on paper. */
-  .rail, #tip, .btn, .icon-btn, .controls, .search, .country-pick, .country-actions, #legend-note,
+  .rail, #tip, .skip, .data-table, .btn, .icon-btn, .controls, .search, .country-pick, .country-actions, #legend-note,
   input[type=range], .game-pick { display: none !important; }
   /* Pickers print as plain text showing their current choice. */
   select { appearance: none; -webkit-appearance: none; box-shadow: none !important; border: 1px solid var(--line) !important; background: none !important; }

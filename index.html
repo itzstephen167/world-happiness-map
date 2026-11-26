@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <aside class="rail">
   <a class="rail-logo" href="index.html" aria-label="World Happiness Map home">
@@ -51,7 +52,7 @@
   </a>
 </aside>
 
-<main>
+<main id="main" tabindex="-1">
   <section id="map-section">
     <div class="page-head">
       <div>
@@ -98,6 +99,16 @@
           <svg id="map" viewBox="0 0 960 520" role="img" tabindex="0" aria-label="World map colored by happiness score" aria-describedby="legend-note"></svg>
         </div>
         <p class="note" id="legend-note">Scroll to zoom, drag to pan. Grey means no data. With the map focused, arrow keys move between countries and Enter opens the country page.</p>
+        <details class="data-table">
+          <summary>Show the map as a table</summary>
+          <div class="table-wrap">
+            <table class="rank-table">
+              <caption id="mapTableCap"></caption>
+              <thead><tr><th scope="col">Country</th><th scope="col" class="col-region">Region</th><th scope="col" class="num">Score</th></tr></thead>
+              <tbody id="mapTable"></tbody>
+            </table>
+          </div>
+        </details>
       </div>
 
       <div class="card" id="detail" aria-live="polite">

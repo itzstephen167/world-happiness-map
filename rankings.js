@@ -22,6 +22,10 @@ loadHappiness().then(({ rows, ranked, rank, regions }) => {
     .attr("class", "dist-bar").attr("x", b => x(b.x0) + 1).attr("width", b => Math.max(0, x(b.x1) - x(b.x0) - 2))
     .attr("y", b => y(b.length)).attr("height", b => y(0) - y(b.length)).attr("rx", 3);
   bars.append("title").text(b => `${b.x0.toFixed(1)}–${b.x1.toFixed(1)}: ${b.length} ${b.length === 1 ? "country" : "countries"}`);
+  // Table fallback: the same counts as the bars
+  const distRows = d3.select("#distTable").selectAll("tr").data(bins).join("tr");
+  distRows.append("td").text(b => `${b.x0.toFixed(1)}–${b.x1.toFixed(1)}`);
+  distRows.append("td").attr("class", "num").append("span").attr("class", "score").text(b => b.length);
   const mark = dist.append("g").attr("class", "dist-mark").style("display", "none");
   mark.append("line").attr("y1", M.t - 6).attr("y2", DH - M.b);
   const markText = mark.append("text").attr("y", M.t - 6);

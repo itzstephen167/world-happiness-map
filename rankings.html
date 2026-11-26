@@ -28,6 +28,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <aside class="rail">
   <a class="rail-logo" href="index.html" aria-label="World Happiness Map home">
@@ -47,7 +48,7 @@
   </a>
 </aside>
 
-<main>
+<main id="main" tabindex="-1">
   <div class="page-head">
     <div>
       <h1>Rankings</h1>
@@ -74,6 +75,16 @@
       </div>
       <svg id="dist" class="dist" viewBox="0 0 720 230" role="img" aria-labelledby="distDesc"></svg>
       <p class="muted table-count" id="distDesc" aria-live="polite"></p>
+      <details class="data-table">
+        <summary>Show the chart as a table</summary>
+        <div class="table-wrap">
+          <table class="rank-table">
+            <caption>Countries in each half-point score band</caption>
+            <thead><tr><th scope="col">Score band</th><th scope="col" class="num">Countries</th></tr></thead>
+            <tbody id="distTable"></tbody>
+          </table>
+        </div>
+      </details>
     </div>
   </section>
 

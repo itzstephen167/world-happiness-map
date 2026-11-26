@@ -196,9 +196,30 @@ Promise.all([
     const n = [...shown.keys()].filter(match).length;
     d3.select("#fCount").text(active ? `${n} of ${shown.size} countries highlighted` : "");
     d3.select("#fClear").property("hidden", !active);
+    drawMapTable(match, active);
+  }
+
+  // Table fallback for the map: the same scores as the colours, for screen readers and anyone who can't tell shades apart.
+  function drawMapTable(match, active) {
+    const year = d3.select("#yearLabel").text();
+    const list = [...shown].filter(([name]) => !active || match(name)).sort((a, b) => b[1] - a[1]);
+    d3.select("#mapTableCap").text(`${list.length} countries${active ? " highlighted" : ""}${/^\d{4}$/.test(year) ? `, ${year} scores` : ""}, highest first`);
+    d3.select("#mapTable").selectAll("tr").data(list, d => d[0]).join(enter => {
+      const row = enter.append("tr");
+      // Only countries in the latest year have a country page.
+      row.append("td").each(function (d) {
+        const cell = d3.select(this);
+        if (happiness.has(d[0])) cell.append("a").attr("href", `country.html?c=${encodeURIComponent(d[0])}`).text(d[0]);
+        else cell.text(d[0]);
+      });
+      row.append("td").attr("class", "col-region muted").text(d => regionOf.get(d[0]) || "–");
+      row.append("td").attr("class", "num").append("span").attr("class", "score");
+      return row;
+    }).order().select(".score").text(d => d[1].toFixed(2));
   }
   d3.selectAll("#fRegion, #fBand").on("change", applyFilters);
   d3.select("#fClear").on("click", () => { d3.selectAll("#fRegion, #fBand").property("value", ""); applyFilters(); });
+  applyFilters(); // fills the table straight away, before the score history arrives
 
   // Year slider: recolour the map with an earlier year's scores. The cards and the detail panel stay on the latest year.
   d3.csv("data/happiness_history.csv", d => ({ country: d.country, year: +d.year, score: +d.score })).then(history => {
